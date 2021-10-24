@@ -1,0 +1,33 @@
+import React from 'react'
+import "../Hero.css"
+import card from "../assets/hero_card.svg"
+
+const Hero = () => {
+    return (
+        <div className="hero--section text-white">
+            <div className="hero--section-upper">
+                <div className="row hero--header" style={{ margin: 'auto'}}>
+                    <div className="col-lg-6 pt-5 ps-5">
+                        <h1 className="hero--header-text">Simplifying Card Manufacturing</h1>
+                    </div>
+                </div>
+            </div>
+            <div className="hero--section-bottom row p-5" style={{ margin: 'auto'}}>
+                <div className="hero--section-card col-lg-6">
+                    <img className="hero--card img-fluid" src={card} alt="hero-card" />
+                </div>
+                <div className="hero--bottom-text col-lg-6"> 
+                    <span style={{ fontSize: "1.65rem" }}>
+                        <p className="text-end">We deliver quality products at affordable prices.</p>
+                        <p className="text-end">Our goal is to provide Smart Card solutions.</p>
+                        <p className="text-end">We solely manufacture fully automated hydraulic fusing machines, motorised card cutters and T-shirt printing machines.</p>
+                        <p className="text-end">Our aim is to deliver quality products with maximum customer satisfaction.</p>
+                    </span>
+                    <a href="#about"><button className="btn about-button" style={{ float: 'right'}}>About Us</button></a>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Hero
