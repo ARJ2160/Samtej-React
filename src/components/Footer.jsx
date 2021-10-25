@@ -4,12 +4,13 @@ const Footer = () => {
 
     let year = new Date().getFullYear() 
     return (
-        <section id="footer" style={{ backgroundColor: 'grey', height: '7vh' }}>
-            <div className="bottom--footer text-white">
-                <h5 style={{verticalAlign: 'middle', lineHeight: '7vh', textAlign: 'center'}}>&copy; {year} COPYRIGHT SAMTEJ INDUSTRIES LLP</h5>
+        <section id="footer">
+            <div className="bottom--footer text-white d-flex justify-content-center align-items-center" style={{ backgroundColor: 'grey', height: '7vh' }}>
+                <span className="mb-0" style={{ fontSize: '13px' }}>&copy; {year} COPYRIGHT SAMTEJ INDUSTRIES LLP</span>
             </div>
         </section>
     )
 }
 
 export default Footer
+// style={{textAlign: 'center'}}

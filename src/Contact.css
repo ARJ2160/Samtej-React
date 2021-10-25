@@ -2,8 +2,8 @@
     background-color: #111;
     padding: 50px;
 }
-.contact{
-    font-size: 4vw;
+.bold-heading{
+    font-size: 4.2vw;
     font-weight: 900;
 }
 .form .txt-field{
@@ -31,8 +31,17 @@
     color: #fff !important;
     background-color: #000 !important;
 }
+.cont{
+    display: flex;
+    justify-content: space-between;
+}
 @media (max-width: 850px){
     .flex-container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 680px){
+    .cont{
         flex-direction: column;
     }
 }
