@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Awards.css"
 import awards from "../awards-data"
-import award_pic from "../assets/award_pic.jpg"
+// import award_pic from "../assets/award_pic.jpg"
 
 const Awards = () => {
     return (
