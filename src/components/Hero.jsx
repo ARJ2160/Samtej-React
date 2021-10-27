@@ -4,15 +4,15 @@ import card from "../assets/hero_card.svg"
 
 const Hero = () => {
     return (
-        <div className="hero--section text-white">
+        <div className="hero--section text-white side-padding">
             <div className="hero--section-upper">
                 <div className="row hero--header" style={{ margin: 'auto'}}>
-                    <div className="col-lg-6 pt-5 ps-5">
+                    <div className="col-lg-6 p-3">
                         <h1 className="hero--header-text">Simplifying Card Manufacturing</h1>
                     </div>
                 </div>
             </div>
-            <div className="hero--section-bottom row p-5" style={{ margin: 'auto'}}>
+            <div className="hero--section-bottom row p-3" style={{ margin: 'auto'}}>
                 <div className="hero--section-card col-lg-6">
                     <img className="hero--card img-fluid" src={card} alt="hero-card" />
                 </div>
@@ -23,7 +23,9 @@ const Hero = () => {
                         <p className="text-end">We solely manufacture fully automated hydraulic fusing machines, motorised card cutters and T-shirt printing machines.</p>
                         <p className="text-end">Our aim is to deliver quality products with maximum customer satisfaction.</p>
                     </span>
-                    <a href="#about"><button className="btn about-button" style={{ float: 'right'}}>About Us</button></a>
+                    <div className="hero--about-button">
+                        <a href="#about"><button className="btn about-button" style={{ float: 'right' }}>About Us</button></a>
+                    </div>
                 </div>
             </div>
         </div>

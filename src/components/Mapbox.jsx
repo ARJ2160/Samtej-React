@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
+import "../Mapbox.css";
 
 function Mapbox() {
 
@@ -24,8 +25,8 @@ function Mapbox() {
     });
 
     return (
-        <div className="col-lg-6 p-4 mt-3">
-            <div ref={mapContainer} className="map-container" style={{height: "100vh", width: "45vw"}}/>
+        <div className="col-lg-6 p-4 mt-3 ">
+            <div ref={mapContainer} className="map-container contact--map" />
         </div>
     )
 }

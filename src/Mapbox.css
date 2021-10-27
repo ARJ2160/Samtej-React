@@ -1,0 +1,9 @@
+.contact--map{
+    height: 100vh !important;
+    width: auto !important;
+}
+@media(max-width: 1100px){
+    .contact--map{
+        height: 50vh !important;
+    }
+}

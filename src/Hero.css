@@ -3,28 +3,18 @@
     background-repeat: no-repeat;
     background-position: fixed;
     background-position: center;
-    height: 100%;
 }
 .hero--header-text{
-    font-size: 5vw;
+    font-size: 4.7vw;
     line-height: 1.5;
     font-weight: 650;
+    pointer-events: none;
 }
-/* .hero--card{
-    width: 50%;
-    height: 50vh;
-} */
-/* .hero--section-card{
-    background-image: url('./assets/Hero-Card.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-} */
 .about-button{
     background-color:#eafcfc !important;
     padding: 1rem 2rem;
     border-radius: 10px;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     outline: none;
 }
 .about-button:hover{
@@ -35,14 +25,21 @@
     .hero--header-text{
         text-align: center;
     }
-    .hero--card{
-        align-items: center;
-    }
     .hero--bottom-text > span > p{
         text-align: center !important;
     }
-    .hero--bottom-text > a > .about-button{
+    .about-button{
         float: none !important;
-        
+        width: 70vw;
+    }
+    .hero--about-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 995px){
+    .hero--card{
+        display: none;
     }
 }

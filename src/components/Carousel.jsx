@@ -2,63 +2,67 @@
 import React, { useState } from 'react'
 import die_punch_cutter from "../assets/carousel/die_punch_cutter.jpeg"
 import card_cutter from "../assets/carousel/motorized_card_cutter.jpg"
-import Carousel from 'react-bootstrap/Carousel'
+// import Carousel from 'react-bootstrap/Carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import "../Carousel.css"
+
 
 function Carousell() {
+        
     return (
-        function ControlledCarousel() {
-            const [index, setIndex] = useState(0);
-          
-            const handleSelect = (selectedIndex, e) => {
-              setIndex(selectedIndex);
-            };
-          
-            return (
-              <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=373940"
-                    alt="First slide"
-                  />
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=282c34"
-                    alt="Second slide"
-                  />
-          
-                  <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
-                    alt="Third slide"
-                  />
-          
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                  </Carousel.Caption>
-                </Carousel.Item>
-              </Carousel>
-            );
-          }
-    )
+        <Carousel>
+            <div>
+                <img src={die_punch_cutter} className="img1" alt="card cutter"/>
+                <p className="legend">Legend 1</p>
+            </div>
+            <div>
+                <img src={card_cutter} alt="card cutter"/>
+                <p className="legend">Legend 2</p>
+            </div>
+        </Carousel>
+    );
 }
 
 export default Carousell
+
+
+
+
+
+
+//const [index, setIndex] = useState(0);
+//     const handleSelect = (selectedIndex, e) => {
+//         setIndex(selectedIndex);
+//     };
+
+//     return (
+//        <Carousel activeIndex={index} onSelect={handleSelect}>
+// <Carousel.Item>
+//     <img
+//     className="img-fluid d-block w-100"
+//     src={die_punch_cutter}
+//     alt="First slide"
+//     />
+//     <Carousel.Caption>
+//     <h3>First slide label</h3>
+//     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+//     </Carousel.Caption>
+// </Carousel.Item>
+// <Carousel.Item>
+//     <img
+//     className="img-fluid d-block w-100"
+//     src={card_cutter}
+//     alt="Second slide"
+//     />
+
+//     <Carousel.Caption>
+//     <h3>Second slide label</h3>
+//     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+//     </Carousel.Caption>
+// </Carousel.Item>
+// </Carousel>
+//     );
 
 
 

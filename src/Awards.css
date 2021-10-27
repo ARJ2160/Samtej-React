@@ -1,6 +1,5 @@
 .awards{
     background-color: #292c33;
-    padding: 40px;
 }
 .outer-award-box{
     width: 50vw !important;
@@ -21,6 +20,6 @@
 .awards-img {
     height: 100% !important;
 }
-@media (max-width: 1200px){
+/* @media (max-width: 1200px){
     .awards-img{}
-}
+} */

@@ -6,7 +6,7 @@ import awards from "../awards-data"
 const Awards = () => {
     return (
         <section id="awards">
-            <div className="awards text-white">
+            <div className="awards text-white side-padding">
                 <h1 className="awards-header pb-5">Customer service is not just a department, it's a company!<br /> Your satisfaction: Our goal !</h1>
                 <div className="flex-container">
                 <div className="awards--section">
