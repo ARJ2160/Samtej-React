@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../Navbar.css"
 // import group_7 from "../assets/group_7.png"
