@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar"
 import Services from "./components/Services"
 import Awards from "./components/Awards"
 import Footer from "./components/Footer"
-import Carousell from "./components/Carousel"
+// import Carousell from "./components/Carousel"
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
             <Services />
             <Awards />
             <Contact />
-            <Carousell />
+            {/* <Carousell /> */}
             <Footer />
         </div>
   );
