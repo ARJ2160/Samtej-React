@@ -2,7 +2,7 @@
     background-color: #292c33;
 }
 .outer-award-box{
-    width: 50vw !important;
+    width: 50vw;
     position: relative;
     z-index: 2;
     background-color:#eafcfc;
@@ -20,6 +20,8 @@
 .awards-img {
     height: 100% !important;
 }
-/* @media (max-width: 1200px){
-    .awards-img{}
-} */
+@media (max-width: 990px){
+    .outer-award-box{
+        width: auto;
+    }
+}

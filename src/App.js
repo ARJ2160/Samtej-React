@@ -6,11 +6,14 @@ import Services from "./components/Services"
 import Awards from "./components/Awards"
 import Footer from "./components/Footer"
 // import Carousell from "./components/Carousel"
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
     return (
         <div className="App">
-            <Navbar />
+            <Router>
+                <Navbar />
+            </Router>
             <Hero />
             <Services />
             <Awards />
