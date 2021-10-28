@@ -5,7 +5,7 @@
     background-position: center;
 }
 .hero--header-text{
-    font-size: 4.7vw;
+    font-size: 4.5vw;
     line-height: 1.5;
     font-weight: 650;
     pointer-events: none;
@@ -14,14 +14,13 @@
     background-color:#eafcfc !important;
     padding: 1rem 2rem;
     border-radius: 10px;
-    /* margin-top: 3rem; */
     outline: none;
 }
 .about-button:hover{
     color: #fff !important;
     background-color: #000 !important;
 }
-@media(max-width: 1000px){
+@media(max-width: 990px){
     .hero--header-text{
         text-align: center;
     }
@@ -37,9 +36,15 @@
         justify-content: center;
         align-items: center;
     }
-}
-@media(max-width: 995px){
     .hero--card{
         display: none;
+    }
+}
+@media(max-width: 930px){
+    .hero--header-text {
+        font-size: 1.7rem;
+    }
+    .hero--bottom-text {
+        font-size: 1rem;
     }
 }

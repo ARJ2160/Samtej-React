@@ -31,7 +31,7 @@ const Contact = () => {
         <section id="contact" className="text-white side-padding">
             <span className="contact--text bold-heading">Contact Us</span>
             <div className="row">
-                <div className="form col-lg-6 p-4">
+                <div className="form col-lg-6 p-3">
                     <form method = "post" name="google-sheet">
                         <div className="txt-field">
                             <input
@@ -64,17 +64,17 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="cont">
-                    <div className="contact--social-media pt-5">
-                        <h1>Social Media</h1>
-                        <ul className="footer--social--icons list-unstyled d-flex">
-                            <li><a href="https://www.instagram.com/arj_2160/" target="_blank" rel="noreferrer">
-                                <img src={instagram_logo} className="img-fluid me-3" alt="instagram logo" />
-                            </a></li>
-                            <li><a href="https://www.linkedin.com/in/atharva-joshi-5657991b3/" target="_blank" rel="noreferrer">
-                                <img src={linkedin_logo} className="img-fluid" alt="linkedin logo" />
-                            </a></li>
-                        </ul>
-                    </div>
+                        <div className="contact--social-media pt-5">
+                            <h1>Social Media</h1>
+                            <ul className="footer--social--icons list-unstyled d-flex">
+                                <li><a href="https://www.instagram.com/arj_2160/" target="_blank" rel="noreferrer">
+                                    <img src={instagram_logo} className="img-fluid me-3" alt="instagram logo" />
+                                </a></li>
+                                <li><a href="https://www.linkedin.com/in/atharva-joshi-5657991b3/" target="_blank" rel="noreferrer">
+                                    <img src={linkedin_logo} className="img-fluid" alt="linkedin logo" />
+                                </a></li>
+                            </ul>
+                        </div>
                     <div className="contact--number pt-5">
                         <h1>Contact Details</h1>
                         <div className="contact--mail-nos">
