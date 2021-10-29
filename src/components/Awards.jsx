@@ -9,7 +9,7 @@ const Awards = () => {
             <div className="awards text-white side-padding">
                 <h1 className="awards-header pb-5 text-center">Customer service is not just a department, it's a company!<br /> Your satisfaction: Our goal !</h1>
                 <div className="awards--section row">
-                    <div className="award--boxes col-lg-6">
+                    <div className="award--boxes pt-4 col-lg-6">
                         {awards.map((award, id) => {
                             return (
                                 <div key={id} className="outer-award-box text-black p-2 m-3">
@@ -22,7 +22,7 @@ const Awards = () => {
                         })}
                     </div>
                     <div className="awards-img col-lg-6">
-                        <img className="img-fluid pt-4" src={award_pic} alt="" />
+                        <img className="img-fluid" src={award_pic} alt="" />
                     </div>
                 </div>
             </div>
