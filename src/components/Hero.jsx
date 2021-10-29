@@ -26,7 +26,7 @@ const Hero = () => {
                             <p className="text-end">Our aim is to deliver quality products with maximum customer satisfaction.</p>
                         </span>
                         <div className="hero--about-button">
-                            <a href="#about"><button className="btn about-button" style={{ float: 'right' }}>About Us</button></a>
+                            <a href="#about"><button className="btn about-button" rel="noreferrer" style={{ float: 'right' }}>About Us</button></a>
                         </div>
                     </div>
                 </div>
