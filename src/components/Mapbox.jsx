@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
-import "../Mapbox.css";
+import "../index.css"
 
 const Mapbox = () => {
 

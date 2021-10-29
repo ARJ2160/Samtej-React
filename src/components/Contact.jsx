@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import "../Contact.css"
+import "../index.css"
 import instagram_logo from "../assets/instagram_logo.svg"
 import linkedin_logo from "../assets/linkedin-profile.svg"
 import Mapbox from "./Mapbox.jsx"
-// eslint-disable-line import/no-webpack-loader-syntax
 
 const Contact = () => {
     
@@ -63,25 +62,25 @@ const Contact = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="cont">
+                    <div className="contact--bottom-container">
                         <div className="contact--social-media pt-5">
                             <h1>Social Media</h1>
                             <ul className="footer--social--icons list-unstyled d-flex">
                                 <li><a href="https://www.instagram.com/arj_2160/" target="_blank" rel="noreferrer">
-                                    <img src={instagram_logo} className="img-fluid me-3" alt="instagram logo" />
+                                    <img src={instagram_logo} className="img-fluid me-3" style={{ width: "37px" ,height: "37px" }} alt="instagram logo" />
                                 </a></li>
                                 <li><a href="https://www.linkedin.com/in/atharva-joshi-5657991b3/" target="_blank" rel="noreferrer">
-                                    <img src={linkedin_logo} className="img-fluid" alt="linkedin logo" />
+                                    <img src={linkedin_logo} className="img-fluid" style={{ width: "57px" ,height: "37px" }} alt="linkedin logo" />
                                 </a></li>
                             </ul>
                         </div>
-                    <div className="contact--number pt-5">
-                        <h1>Contact Details</h1>
-                        <div className="contact--mail-nos">
-                            <span className="lead" style={{ fontSize: '15px' }}>samtejindustriesllp@gmail.com<br/>9822214198<br/>8796666160</span>
-                            <span></span>
+                        <div className="contact--number pt-5">
+                            <h1>Contact Details</h1>
+                            <div className="contact--mail-nos">
+                                <span className="lead" style={{ fontSize: '15px' }}>samtejindustriesllp@gmail.com<br/>9822214198<br/>8796666160</span>
+                                <span></span>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <Mapbox />

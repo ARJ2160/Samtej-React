@@ -1,7 +1,7 @@
 import React from 'react'
-import "../Awards.css"
+import "../index.css"
 import awards from "../awards-data"
-import award_pic from "../assets/award_pic.jpg"
+import award_pic from "../assets/award_pic.webp"
 
 const Awards = () => {
     return (
@@ -14,14 +14,14 @@ const Awards = () => {
                             return (
                                 <div key={id} className="outer-award-box text-black p-2 m-3">
                                     <div className="award-box-inner p-2">
-                                        <span style={{fontSize: "1.5rem"}}>{award.title}</span>
+                                        <h2 className="mb-3" style={{fontSize: "1.5rem"}}>{award.title}</h2>
                                         <p>{award.desc}</p>
                                     </div>
                                 </div>
                             )
                         })}
                     </div>
-                    <div className="awards-img col-lg-6">
+                    <div className="awards-img col-lg-6 pt-4">
                         <img className="img-fluid" src={award_pic} alt="" />
                     </div>
                 </div>

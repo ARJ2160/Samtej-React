@@ -1,3 +1,4 @@
+/*<------------------------------------- Index CSS ------------------------------------->*/
 * {
     margin: 0;
     padding: 0;
@@ -15,3 +16,165 @@
         padding: 10px;
     }
 }
+/*<------------------------------------- Index CSS ------------------------------------->*/
+/*<------------------------------------- Hero CSS ------------------------------------->*/
+.hero--section{
+    background-image: url('./assets/hero-background.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero--header-text{
+    font-size: 4.5vw;
+    line-height: 1.5;
+    font-weight: 650;
+    pointer-events: none;
+}
+.about-button{
+    background-color:#eafcfc !important;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    outline: none;
+}
+.about-button:hover{
+    color: #fff !important;
+    background-color: #000 !important;
+}
+@media(max-width: 990px){
+    .hero--header-text{
+        text-align: center;
+    }
+    .hero--bottom-text > span > p{
+        text-align: center !important;
+    }
+    .about-button{
+        float: none !important;
+        width: 70vw;
+    }
+    .hero--about-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero--card{
+        display: none;
+    }
+}
+@media(max-width: 930px){
+    .hero--header-text {
+        font-size: 1.7rem;
+    }
+    .hero--bottom-text {
+        font-size: 1rem;
+    }
+}
+/*<------------------------------------- Hero CSS ------------------------------------->*/
+/*<------------------------------------- Services CSS ------------------------------------->*/
+.services{
+    background-color:#eafcfc;
+}
+.services-list ul li{
+    list-style: disc;
+    padding: 20px;
+    font-weight: 400;
+}
+/*<------------------------------------- Services CSS ------------------------------------->*/
+/*<------------------------------------- Awards CSS ------------------------------------->*/
+.awards{
+    background-color: #292c33;
+}
+.outer-award-box{
+    width: 50vw;
+    position: relative;
+    z-index: 2;
+    background-color:#eafcfc;
+    border-radius: 10px;
+    box-shadow: -1px 6px 13px 0px rgba(255,255,255, 0.44);
+    -webkit-box-shadow: -1px 6px 13px 0px rgba(255,255,255, 0.44);
+    -moz-box-shadow: -1px 6px 13px 0px rgba(255,255,255, 0.44);
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+@media (max-width: 990px){
+    .award--boxes{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .outer-award-box{
+        width: 70vw;
+    }
+}
+@media(max-width: 510px){
+    .awards--section{
+        padding-right: 0;
+        margin-right: 0;
+    }
+}
+/*<------------------------------------- Awards CSS ------------------------------------->*/
+/*<------------------------------------- Contact CSS ------------------------------------->*/
+#contact{
+    background-color: #111;
+}
+.bold-heading{
+    font-size: 55.2px;
+    font-weight: 900;
+}
+.form .txt-field{
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt-field input{
+    color: #fff !important;
+    width: 80%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    outline: none;
+}
+.send-request{
+    background-color:#eafcfc !important;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    outline: none;
+}
+.send-request:hover{
+    color: #fff !important;
+    background-color: #000 !important;
+}
+.contact--bottom-container{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 850px){
+    .flex-container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 680px){
+    .contact--bottom-container{
+        flex-direction: column;
+    }
+    .form{
+        padding-right: 0!important;
+    }
+}
+/*<------------------------------------- Contact CSS ------------------------------------->*/
+/*<------------------------------------- Mapbox CSS ------------------------------------->*/
+.contact--map{
+    height: 100vh !important;
+    width: auto !important;
+}
+@media(max-width: 900px){
+    .contact--map{
+        height: 50vh !important;
+    }
+}
+/*<------------------------------------- Mapbox CSS ------------------------------------->*/

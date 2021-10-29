@@ -1,11 +1,10 @@
-import './App.css';
-import Hero from "./components/Hero"
-import Contact from "./components/Contact"
 import Navbar from "./components/HeroNavbar"
+import Hero from "./components/Hero"
 import Services from "./components/Services"
 import Awards from "./components/Awards"
+import Contact from "./components/Contact"
+import ControlledCarousel from "./components/ControlledCarousel"
 import Footer from "./components/Footer"
-// import Carousell from "./components/Carousel"
 
 function App() {
     return (
@@ -15,6 +14,7 @@ function App() {
             <Services />
             <Awards />
             <Contact />
+            <ControlledCarousel/>
             <Footer />
         </div>
   );
