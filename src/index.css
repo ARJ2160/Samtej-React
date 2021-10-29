@@ -22,6 +22,7 @@
     background-image: url('./assets/hero-background.webp');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 .hero--header-text{
     font-size: 4.5vw;
@@ -31,6 +32,7 @@
 }
 .about-button{
     background-color:#eafcfc !important;
+    background-color: #87AAAA !important;
     padding: 1rem 2rem;
     border-radius: 10px;
     outline: none;
@@ -71,6 +73,7 @@
 /*<------------------------------------- Services CSS ------------------------------------->*/
 .services{
     background-color:#eafcfc;
+    background-color: #87AAAA;
 }
 .services-list ul li{
     list-style: disc;
@@ -87,6 +90,7 @@
     position: relative;
     z-index: 2;
     background-color:#eafcfc;
+    background-color: #87AAAA;
     border-radius: 10px;
     box-shadow: -1px 6px 13px 0px rgba(255,255,255, 0.44);
     -webkit-box-shadow: -1px 6px 13px 0px rgba(255,255,255, 0.44);

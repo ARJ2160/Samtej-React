@@ -11,7 +11,7 @@ const Mapbox = () => {
     const [lng] = useState(73.81365477686839);
     const [lat] = useState(18.462329864338695);
     const [zoom] = useState(17);
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYXJqLTIxIiwiYSI6ImNrdDFlaDZwZTA5aWszNnBnNzVrZHh4N3cifQ.Igap8G_1_t9qC_1zyt_ARw';
+    mapboxgl.accessToken = process.env.NODE_ENV;
 
     useEffect(() => {
 
