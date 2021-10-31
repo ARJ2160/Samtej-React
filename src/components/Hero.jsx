@@ -34,6 +34,7 @@ const Hero = () => {
                     150, parseInt(Math.random() * 100)));
 
         return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [subIndex, index, reverse]);
 
     //Blink Logic
