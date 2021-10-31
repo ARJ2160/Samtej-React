@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../index.css"
 import facebook_logo from "../assets/facebook-logo.webp"
 import linkedin_logo from "../assets/linkedin-profile.svg"
-// import Mapbox from "./Mapbox.jsx"
+import Mapbox from "./Mapbox.jsx"
 
 const Contact = () => {
     
@@ -68,12 +68,12 @@ const Contact = () => {
                             <ul className="footer--social--icons list-unstyled d-flex">
                                 <li>
                                     <a href="https://www.instagram.com/arj_2160/" target="_blank" rel="noreferrer">
-                                        <img src={facebook_logo} className="img-fluid me-3" style={{ width: "77px" ,height: "auto" }} alt="instagram logo" />
+                                        <img src={facebook_logo} width="77" height="auto" className="img-fluid me-3" style={{ width: "77px", height: "auto" }} alt="instagram logo" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.linkedin.com/in/atharva-joshi-5657991b3/" target="_blank" rel="noreferrer">
-                                        <img src={linkedin_logo} className="img-fluid" style={{ width: "77px", height: "auto" }} alt="linkedin logo" />
+                                        <img src={linkedin_logo} width="77" height="auto" className="img-fluid" style={{ width: "77px", height: "auto" }} alt="linkedin logo" />
                                     </a>
                                 </li>
                             </ul>
@@ -87,7 +87,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                {/* <Mapbox /> */}
+                <Mapbox />
             </div>
         </section>
     )
