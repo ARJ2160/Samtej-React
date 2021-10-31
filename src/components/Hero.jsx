@@ -1,16 +1,59 @@
-import React from 'react'
+import React, { useState, useEffect  } from 'react'
 import "../index.css"
 import card from "../assets/hero_card.svg"
 
 const Hero = () => {
-    
+
+    const [index, setIndex] = useState(0);
+    const [subIndex, setSubIndex] = useState(0);
+    const [blink, setBlink] = useState(true); 
+    const [reverse, setReverse] = useState(false);
+    const words = ["Simplifying Card Manufacturing"]
+
+
+    // Typewriter Logic
+    useEffect(() => {
+
+        if (index === words.length) return;
+
+        if ( subIndex === words[index].length + 1 && 
+            index !== words.length - 1 && !reverse ) {
+            setReverse(true);
+            return;
+        }
+
+        if (subIndex === 0 && reverse) {
+            setReverse(false);
+            setIndex((prev) => prev + 1);
+            return;
+        }
+
+        const timeout = setTimeout(() => {
+            setSubIndex((prev) => prev + (reverse ? -1 : 1));
+        }, Math.max(reverse ? 75 : subIndex === words[index].length ? 1000 :
+                    150, parseInt(Math.random() * 100)));
+
+        return () => clearTimeout(timeout);
+    }, [subIndex, index, reverse]);
+
+    //Blink Logic
+    useEffect(() => {
+        const timeout2 = setTimeout(() => {
+            setBlink((prev) => !prev);
+        }, 500);
+        return () => clearTimeout(timeout2);
+      }, [blink]);
+
     return (
         <section id="hero">
             <div className="hero--section text-white side-padding">
                 <div className="hero--section-upper">
                     <div className="row hero--header" style={{ margin: 'auto'}}>
                         <div className="col-lg-6 p-3">
-                            <h1 className="hero--header-text pt-5">Simplifying Card Manufacturing</h1>
+                            {/* <h1 className="hero--header-text pt-5">Simplifying Card Manufacturing</h1> */}
+                            <h1 className="hero--header-text pt-5">
+                                {`${words[index].substring(0, subIndex)}${blink ? "|" : ""}`}
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -18,15 +61,13 @@ const Hero = () => {
                     <div className="hero--section-card col-lg-6">
                         <img className="hero--card img-fluid" src={card} alt="hero-card" />
                     </div>
-                    <div className="hero--bottom-text col-lg-6"> 
-                        <span style={{ fontSize: "1.65rem" }}>
-                            <p className="text-end">We deliver quality products at affordable prices.</p>
-                            <p className="text-end">Our goal is to provide Smart Card solutions.</p>
-                            <p className="text-end">We solely manufacture fully automated hydraulic fusing machines, motorised card cutters and T-shirt printing machines.</p>
-                            <p className="text-end">Our aim is to deliver quality products with maximum customer satisfaction.</p>
-                        </span>
+                    <div className="hero--bottom-text text-end lead pt-5 col-lg-6" style={{ fontSize: "1.65rem" }}> 
+                            <h4>We deliver quality products at affordable prices.</h4>
+                            <h4>Our goal is to provide Smart Card solutions.</h4>
+                            <h4>We solely manufacture fully automated hydraulic fusing machines, motorised card cutters and T-shirt printing machines.</h4>
+                            <h4>Our aim is to deliver quality products with maximum customer satisfaction.</h4>
                         <div className="hero--about-button">
-                            <a href="#about"><button className="btn about-button" rel="noreferrer" style={{ float: 'right' }}>About Us</button></a>
+                            <a href="#about"><button className="btn about-button mt-5" rel="noreferrer" style={{ float: 'right' }}>About Us</button></a>
                         </div>
                     </div>
                 </div>

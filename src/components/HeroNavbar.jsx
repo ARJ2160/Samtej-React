@@ -7,10 +7,10 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 const HeroNavbar = () => {
     
     return (
-        <Navbar className="main--navigation" expand="lg" fixed="top" style={{ backgroundColor: "#87AAAA" }}>
+        <Navbar className="main--navigation" expand="lg" fixed="top" style={{ backgroundColor: "#D1E8E4" }}>
             <Container>
                 <Navbar.Brand href="#"><img src={company_logo} style={{width: "50px", height: "50px"}} alt="brand-logo" /></Navbar.Brand>
-                <Navbar.Brand href="#hero">SamTej Industries</Navbar.Brand>
+                {/* <Navbar.Brand href="#">SamTej Industries</Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">

@@ -3,7 +3,7 @@ import Hero from "./components/Hero"
 import Services from "./components/Services"
 import Awards from "./components/Awards"
 import Contact from "./components/Contact"
-import ControlledCarousel from "./components/ControlledCarousel"
+// import ControlledCarousel from "./components/ControlledCarousel"
 import Footer from "./components/Footer"
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
             <Services />
             <Awards />
             <Contact />
-            <ControlledCarousel/>
+            {/* <ControlledCarousel/> */}
             <Footer />
         </div>
   );

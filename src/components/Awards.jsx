@@ -7,7 +7,7 @@ const Awards = () => {
     return (
         <section id="awards">
             <div className="awards text-white side-padding">
-                <h1 className="awards-header pb-5 text-center">Customer service is not just a department, it's a company!<br /> Your satisfaction: Our goal !</h1>
+                <h1 className="awards-header general--padding pt-5 text-center">Customer service is not just a department, it's a company!<br /> Your satisfaction: Our goal !</h1>
                 <div className="awards--section row">
                     <div className="award--boxes pt-4 col-lg-6">
                         {awards.map((award, id) => {

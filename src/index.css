@@ -11,24 +11,35 @@
 .side-padding{
     padding: 30px;
 }
+.general--padding{
+    padding: 30px;
+}
 @media (max-width: 500px) {
     .side-padding{
+        padding: 10px;
+    }
+    .general--padding{
         padding: 10px;
     }
 }
 /*<------------------------------------- Index CSS ------------------------------------->*/
 /*<------------------------------------- Hero CSS ------------------------------------->*/
 .hero--section{
-    background-image: url('./assets/hero-background.webp');
+    /* background-image: url('./assets/hero-background.webp'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: #111111;
 }
 .hero--header-text{
     font-size: 4.5vw;
     line-height: 1.5;
     font-weight: 650;
     pointer-events: none;
+    height: 40vh;
+}
+.hero--bottom-text > h4{
+    padding-bottom: 10px;
 }
 .about-button{
     background-color:#eafcfc !important;
@@ -44,8 +55,10 @@
 @media(max-width: 990px){
     .hero--header-text{
         text-align: center;
+        height: auto;
+        padding-top: 5rem;
     }
-    .hero--bottom-text > span > p{
+    .hero--bottom-text > h4{
         text-align: center !important;
     }
     .about-button{
@@ -74,6 +87,7 @@
 .services{
     background-color:#eafcfc;
     background-color: #87AAAA;
+    padding-top: 3rem;
 }
 .services-list ul li{
     list-style: disc;
@@ -84,6 +98,7 @@
 /*<------------------------------------- Awards CSS ------------------------------------->*/
 .awards{
     background-color: #292c33;
+    padding-top: 3rem;
 }
 .outer-award-box{
     width: 50vw;
@@ -123,6 +138,7 @@
 /*<------------------------------------- Contact CSS ------------------------------------->*/
 #contact{
     background-color: #111;
+    padding-top: 5rem;
 }
 .bold-heading{
     font-size: 55.2px;
