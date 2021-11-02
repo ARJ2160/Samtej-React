@@ -2,19 +2,17 @@ import React, { useEffect, useRef, useState } from 'react'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import mapboxgl from 'mapbox-gl';
 import "../index.css"
-import dotenv from 'dotenv';
-dotenv.config();
+require('dotenv').config();
 
 const Mapbox = () => {
 
-    console.log(process.env.API_KEY);
     //MAP CONFIG
     const mapContainer = useRef(null);
     const map = useRef(null);
     const [lng] = useState(73.81365477686839);
     const [lat] = useState(18.462329864338695);
     const [zoom] = useState(17);
-    mapboxgl.accessToken = process.env.API_KEY == null ? "pk.eyJ1IjoiYXJqLTIxIiwiYSI6ImNrdDFlaDZwZTA5aWszNnBnNzVrZHh4N3cifQ.Igap8G_1_t9qC_1zyt_ARw" : process.env.API_KEY;
+    mapboxgl.accessToken = process.env.REACT_APP_API_KEY;
 
     useEffect(() => {
 

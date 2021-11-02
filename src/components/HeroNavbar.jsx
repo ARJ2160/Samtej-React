@@ -2,7 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../index.css"
 import company_logo from "../assets/brand_logo.webp"
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap'; 
 
 const HeroNavbar = () => {
     
