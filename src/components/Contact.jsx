@@ -30,7 +30,7 @@ const Contact = () => {
         <section id="contact" className="text-white side-padding">
             <span className="contact--text bold-heading">Contact Us</span>
             <div className="row me-0">
-                <div className="form col-lg-6 p-3">
+                <div className="form p-3">
                     <form method = "post" name="google-sheet">
                         <div className="txt-field">
                             <input
