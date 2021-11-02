@@ -6,7 +6,7 @@ import React from 'react'
 // import heat_press_3 from "../assets/carousel/heat-press-3.webp"
 import { Card, Button } from 'react-bootstrap';
 import products from "../product-info"
-import '../CustomCarousel.css'
+import '../index.css'
 
 function CustomCarousel() {
     return (

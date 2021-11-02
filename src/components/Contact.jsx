@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../index.css"
 import facebook_logo from "../assets/facebook-logo.webp"
 import linkedin_logo from "../assets/linkedin-profile.svg"
-import Mapbox from "./Mapbox.jsx"
+// import Mapbox from "./Mapbox.jsx"
 
 const Contact = () => {
     
@@ -87,7 +87,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <Mapbox />
+                {/* <Mapbox /> */}
             </div>
         </section>
     )
