@@ -6,7 +6,7 @@ const Hero = () => {
 
     const [index, setIndex] = useState(0);
     const [subIndex, setSubIndex] = useState(0);
-    const [blink, setBlink] = useState(true); 
+    const [blink, setBlink] = useState(true);
     const [reverse, setReverse] = useState(false);
     const words = ["Simplifying Card Manufacturing"]
 
@@ -16,7 +16,7 @@ const Hero = () => {
 
         if (index === words.length) return;
 
-        if ( subIndex === words[index].length + 1 && 
+        if ( subIndex === words[index].length + 1 &&
             index !== words.length - 1 && !reverse ) {
             setReverse(true);
             return;
@@ -62,7 +62,7 @@ const Hero = () => {
                     <div className="hero--section-card col-lg-6">
                         <img className="hero--card img-fluid" src={card} alt="hero-card" />
                     </div>
-                    <div className="hero--bottom-text text-end lead pt-5 col-lg-6" style={{ fontSize: "1.65rem" }}> 
+                    <div className="hero--bottom-text text-end lead pt-5 col-lg-6" style={{ fontSize: "1.65rem" }}>
                             <h4>We deliver quality products at affordable prices.</h4>
                             <h4>Our goal is to provide Smart Card solutions.</h4>
                             <h4>We solely manufacture fully automated hydraulic fusing machines, motorised card cutters and T-shirt printing machines.</h4>

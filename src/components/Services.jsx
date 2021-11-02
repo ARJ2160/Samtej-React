@@ -3,7 +3,7 @@ import "../index.css"
 import services from "../services-data.js"
 
 const Services = () => {
-    
+
     return (
         <section id="about">
             <div className="services side-padding">

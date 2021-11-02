@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
 
-    let year = new Date().getFullYear() 
+    let year = new Date().getFullYear()
     return (
         <section id="footer">
             <div className="bottom--footer text-black  d-flex justify-content-center align-items-center" style={{ backgroundColor: 'grey', height: '7vh' }}>
