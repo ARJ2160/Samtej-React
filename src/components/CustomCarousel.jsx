@@ -16,7 +16,7 @@ function CustomCarousel() {
                 {products.map((product, key) => {
                     if (product.type === "hydraulic-system") {
                         return (
-                            <Card id={key} style={{ width: '18rem', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4">
+                            <Card id={key} style={{ width: '18rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4 justify-content-between">
                                 <Card.Img variant="top" className="p-3" src={product.img} loading="lazy" />
                                 <Card.Body>
                                     
@@ -34,7 +34,7 @@ function CustomCarousel() {
                     }
                     else if (product.type === "heat-press" || product.type === "card-cutter") {
                         return (
-                            <Card id={key} style={{ width: '18rem', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4">
+                            <Card id={key} style={{ width: '18rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4 d-flex justify-content-between">
                                 <Card.Img variant="top" className="p-3" src={product.img} loading="lazy" />
                                 <Card.Body>
                                     
@@ -42,6 +42,7 @@ function CustomCarousel() {
                                     <Card.Text className="pt-4">
                                         Power: <strong>{product.power}</strong><br />
                                         Cut Size: <strong>{product.cut_size}</strong><br />
+                                        Lorem ipsum: <strong>dolor sit, amet consectetur adipisicing.</strong><br />
                                         Capacity : <strong>{product.capacity}</strong>
                                     </Card.Text>
                                     <Button variant="dark">Read More</Button>
@@ -49,23 +50,6 @@ function CustomCarousel() {
                             </Card>
                         )
                     }
-                    /* else if (product.type === "card-cutter") {
-                        return (
-                            <Card id={key} style={{ width: '18rem', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4">
-                                <Card.Img variant="top" className="p-3" src={product.img} loading="lazy" />
-                                <Card.Body>
-                                    
-                                    <Card.Title style={{ height: "100px" }}>{product.card_body}</Card.Title>
-                                    <Card.Text className="pt-4">
-                                        Power : <strong>{product.power}</strong><br />
-                                        Cut Size: <strong>{product.cut_size}</strong><br />
-                                        Capacity : <strong>{product.capacity}</strong>
-                                    </Card.Text>
-                                    <Button variant="dark">Read More</Button>
-                                </Card.Body>
-                            </Card>
-                        )
-                    } */
                     return null
                 })}
                 {/* <Card style={{ width: '18rem' }} className="col-lg-3 col-md-6">

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import "../index.css"
-import facebook_logo from "../assets/facebook-logo.webp"
-import linkedin_logo from "../assets/linkedin-profile.svg"
-// import Mapbox from "./Mapbox.jsx"
+import facebook_logo from "../assets/facebook_logo.svg"
+import linkedin_logo from "../assets/linkedin_logo.svg"
 
 const Contact = () => {
     
@@ -65,29 +64,24 @@ const Contact = () => {
                     <div className="contact--bottom-container">
                         <div className="contact--social-media pt-5">
                             <h1>Social Media</h1>
-                            <ul className="footer--social--icons list-unstyled d-flex">
-                                <li>
-                                    <a href="https://www.instagram.com/arj_2160/" target="_blank" rel="noreferrer">
-                                        <img src={facebook_logo} width="77" height="auto" className="img-fluid me-3" style={{ width: "77px", height: "auto" }} alt="instagram logo" loading="lazy"/>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/atharva-joshi-5657991b3/" target="_blank" rel="noreferrer">
-                                        <img src={linkedin_logo} width="77" height="auto" className="img-fluid" style={{ width: "77px", height: "auto" }} alt="linkedin logo" loading="lazy"/>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div className="footer--social--icons d-flex">
+                                <a href="https://www.instagram.com/arj_2160/" target="_blank" rel="noreferrer">
+                                    <img src={facebook_logo} className="img-fluid me-5 mt-4" style={{ width: "50px", height: "50px" }} alt="instagram logo" loading="lazy"/>
+                                </a>
+                                <a href="https://www.linkedin.com/in/atharva-joshi-5657991b3/" target="_blank" rel="noreferrer">
+                                    <img src={linkedin_logo} className="img-fluid mt-4" style={{ width: "50px", height: "50px", fill: "white" }} alt="linkedin logo" loading="lazy"/>
+                                </a>
+                            </div>
                         </div>
                         <div className="contact--number pt-5">
                             <h1>Contact Details</h1>
-                            <div className="contact--mail-nos">
+                            <div className="contact--mail-nos mt-3">
                                 <span className="lead" style={{ fontSize: '15px' }}>samtejindustriesllp@gmail.com<br/>9822214198<br/>8796666160</span>
                                 <span></span>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <Mapbox /> */}
             </div>
         </section>
     )
