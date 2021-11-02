@@ -5,7 +5,7 @@ import React from 'react'
 // import heat_press_2 from "../assets/carousel/heat-press-2.webp"
 // import heat_press_3 from "../assets/carousel/heat-press-3.webp"
 import { Card, Button } from 'react-bootstrap';
-import products from "../product-info"
+import products from "../product-data"
 import '../index.css'
 
 function CustomCarousel() {
@@ -13,10 +13,10 @@ function CustomCarousel() {
         <div className="carousel side-padding">
             <h1 className="text-center p-5 text-white">Have a Look at our Products</h1>
             <div className="products-section d-flex justify-content-center align-items-center row me-0">
-                {products.map((product, key) => {
+                {products.map((product, id) => {
                     if (product.type === "hydraulic-system") {
                         return (
-                            <Card id={key} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4 p-3 d-flex justify-content-center align-items-center">
+                            <Card key={id} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4 p-3 d-flex justify-content-center align-items-center">
                                 <Card.Img variant="top" className="p-3" src={product.img} loading="lazy" alt="hydralic system"/>
                                 <Card.Body>
 
@@ -34,7 +34,7 @@ function CustomCarousel() {
                     }
                     else if (product.type === "heat-press") {
                         return (
-                            <Card id={key} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4 d-flex justify-content-center align-items-center">
+                            <Card key={id} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4 d-flex justify-content-center align-items-center">
                                 <Card.Img variant="top" className="p-3" src={product.img} loading="lazy" alt="heat-press" />
                                 <Card.Body>
 
@@ -51,7 +51,7 @@ function CustomCarousel() {
                     }
                     else if (product.type === "card-cutter") {
                         return (
-                            <Card id={key} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4">
+                            <Card key={id} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4">
                                 <Card.Img variant="top" className="p-3" src={product.img} loading="lazy" alt="card-cutter" />
                                 <Card.Body>
 
