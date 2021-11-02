@@ -11,7 +11,7 @@ import '../CustomCarousel.css'
 function CustomCarousel() {
     return (
         <div className="carousel side-padding">
-            <h1 className="text-center p-5 text-white bold-heading">Have a Look at our Products</h1>
+            <h1 className="text-center p-5 text-white">Have a Look at our Products</h1>
             <div className="products-section d-flex justify-content-center align-items-center row me-0">
                 {products.map((product, key) => {
                     if (product.type === "hydraulic-system") {
