@@ -58,10 +58,23 @@ const products = [
         "id": "6",
         "type": "card-cutter",
         "img": card_cutter,
-        "card_body": "Motorised Single Card Cutter",
-        "cut_size" : "86 x 54 x 1.2 mm",
-        "power": "375 W, 230V AC Single Phase",
-        "capacity": "900 Cards per hour."
+        "card_body": "800W Motorized Card Cutter Machine",
+        "weight": "40kg",
+        "cut_size" : "86 x 54 x 1.2 mm thick",
+        "power": "800W, 380V AC Single Phase",
+        "frequency": "50Hz",
+        "capacity": "400 Cards per hour."
+    },
+    {
+        "id": "7",
+        "type": "card-cutter",
+        "img": card_cutter,
+        "card_body": "Motorized Card Cutter Machine",
+        "weight": "9kg",
+        "cut_size" : "86 x 54 x 1.2 mm thick",
+        "power": "200W, 240V AC Single Phase",
+        "frequency": "50Hz",
+        "capacity": "200 Cards per hour."
     }
 ]
 

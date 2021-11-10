@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "../index.css"
-import facebook_logo from "../assets/facebook_logo.svg"
-import linkedin_logo from "../assets/linkedin_logo.svg"
+import { FaFacebook, FaLinkedin, FaShoppingCart } from 'react-icons/fa';
+import Mapbox from "./Mapbox"
 
 const Contact = () => {
 
@@ -29,7 +29,7 @@ const Contact = () => {
         <section id="contact" className="text-white side-padding">
             <span className="contact--text bold-heading">Contact Us</span>
             <div className="row me-0">
-                <div className="form p-3">
+                <div className="form col-lg-6 p-3">
                     <form method = "post" name="google-sheet">
                         <div className="txt-field">
                             <input
@@ -65,11 +65,14 @@ const Contact = () => {
                         <div className="contact--social-media pt-5">
                             <h1>Social Media</h1>
                             <div className="footer--social--icons d-flex">
-                                <a href="https://www.instagram.com/arj_2160/" target="_blank" rel="noreferrer">
-                                    <img src={facebook_logo} className="img-fluid me-5 mt-4" style={{ width: "50px", height: "50px" }} alt="instagram logo" loading="lazy"/>
+                                <a href="https://www.instagram.com/arj_2160/" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
+                                    <FaFacebook className="img-fluid me-5 mt-4" style={{ width: "40px", height: "40px" }}/>
                                 </a>
-                                <a href="https://www.linkedin.com/in/atharva-joshi-5657991b3/" target="_blank" rel="noreferrer">
-                                    <img src={linkedin_logo} className="img-fluid mt-4" style={{ width: "50px", height: "50px", fill: "white" }} alt="linkedin logo" loading="lazy"/>
+                                <a href="https://www.linkedin.com/in/atharva-joshi-5657991b3/" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
+                                    <FaLinkedin className="img-fluid me-5 mt-4" style={{ width: "40px", height: "40px" }}/>
+                                </a>
+                                <a href="https://www.indiamart.com/samtej-industries/" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
+                                    <FaShoppingCart className="img-fluid me-5 mt-4" style={{ width: "40px", height: "40px" }}/>
                                 </a>
                             </div>
                         </div>
@@ -82,6 +85,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+                <Mapbox />
             </div>
         </section>
     )

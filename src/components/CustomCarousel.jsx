@@ -19,7 +19,6 @@ function CustomCarousel() {
                             <Card key={id} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4 p-3 d-flex justify-content-center align-items-center">
                                 <Card.Img variant="top" className="p-3" src={product.img} loading="lazy" alt="hydralic system"/>
                                 <Card.Body>
-
                                     <Card.Title style={{ height: "100px" }}>{product.card_body}</Card.Title>
                                     <Card.Text className="pt-4">
                                         Power : <strong>{product.power}</strong><br />
@@ -37,7 +36,6 @@ function CustomCarousel() {
                             <Card key={id} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4 d-flex justify-content-center align-items-center">
                                 <Card.Img variant="top" className="p-3" src={product.img} loading="lazy" alt="heat-press" />
                                 <Card.Body>
-
                                     <Card.Title style={{ height: "100px" }}>{product.card_body}</Card.Title>
                                     <Card.Text className="pt-4">
                                         Power: <strong>{product.power}</strong><br />
@@ -51,15 +49,15 @@ function CustomCarousel() {
                     }
                     else if (product.type === "card-cutter") {
                         return (
-                            <Card key={id} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4">
+                            <Card key={id} style={{ width: '16rem', height: '650px', borderRadius: '10px' }} className="col-lg-3 col-md-6 m-4 d-flex justify-content-between">
                                 <Card.Img variant="top" className="p-3" src={product.img} loading="lazy" alt="card-cutter" />
                                 <Card.Body>
-
                                     <Card.Title style={{ height: "100px" }}>{product.card_body}</Card.Title>
                                     <Card.Text>
+                                        Weight: <strong>{product.weight}</strong><br />
                                         Power: <strong>{product.power}</strong><br />
                                         Cut Size: <strong>{product.cut_size}</strong><br />
-                                        Lorem ipsum: <strong>dolor sit, amet consectetur adipisicing.</strong><br />
+                                        Frequency: <strong>{product.frequency}</strong><br />
                                         Capacity : <strong>{product.capacity}</strong>
                                     </Card.Text>
                                     <Button variant="dark">Read More</Button>

@@ -7,6 +7,7 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    font-display: swap;
 }
 .side-padding{
     padding: 30px;
@@ -30,7 +31,11 @@
     font-size: 4.5vw;
     line-height: 1.5;
     font-weight: 650;
+    letter-spacing: 2px;
     pointer-events: none;
+    /* height: 40vh; */
+}
+.hero--header{
     height: 40vh;
 }
 .hero--bottom-text > h4{
@@ -47,11 +52,24 @@
     color: #fff !important;
     background-color: #000 !important;
 }
+.hero--section-card > img {
+    max-width: 100%;
+    height: auto
+}
+@media (max-width: 1500px){
+    .hero--header{
+        height: 20vh;
+    }
+}
+@media(max-width: 1024px){
+    .hero--header{
+        height: auto;
+    }
+}
 @media(max-width: 990px){
     .hero--header-text{
         text-align: center;
         height: auto;
-        padding-top: 5rem;
     }
     .hero--bottom-text > h4{
         text-align: center !important;
@@ -65,13 +83,19 @@
         justify-content: center;
         align-items: center;
     }
-    .hero--card{
-        display: none;
+    .hero--section-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero--section-card > img {
+        width: 60%;
+        height: auto;
     }
 }
 @media(max-width: 930px){
     .hero--header-text {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
     .hero--bottom-text {
         font-size: 1rem;
@@ -85,7 +109,7 @@
 }
 .services-list ul li{
     list-style: disc;
-    padding: 20px;
+    padding-top: 20px;
     font-weight: 400;
 }
 /*<------------------------------------- Awards CSS ------------------------------------->*/
@@ -130,7 +154,7 @@
 /*<------------------------------------- Contact CSS ------------------------------------->*/
 #contact{
     background-color: #111;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 .bold-heading{
     font-size: 55.2px;
@@ -179,15 +203,15 @@
     }
 }
 /*<------------------------------------- Mapbox CSS ------------------------------------->*/
-/* .contact--map{
+.contact--map{
     height: 100vh !important;
     width: auto !important;
 }
-@media(max-width: 900px){
+@media(max-width: 990px){
     .contact--map{
         height: 50vh !important;
     }
-} */
+}
 /*<------------------------------------- Product Section CSS ------------------------------------->*/
 .carousel{
     background-color: #292C33;

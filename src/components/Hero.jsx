@@ -9,8 +9,7 @@ const Hero = () => {
     const [blink, setBlink] = useState(true);
     const [reverse, setReverse] = useState(false);
     const words = ["Simplifying Card Manufacturing"]
-
-
+    
     // Typewriter Logic
     useEffect(() => {
 
@@ -51,7 +50,6 @@ const Hero = () => {
                 <div className="hero--section-upper">
                     <div className="row hero--header" style={{ margin: 'auto'}}>
                         <div className="col-lg-6 p-3">
-                            {/* <h1 className="hero--header-text pt-5">Simplifying Card Manufacturing</h1> */}
                             <h1 className="hero--header-text pt-5">
                                 {`${words[index].substring(0, subIndex)}${blink ? "|" : ""}`}
                             </h1>
