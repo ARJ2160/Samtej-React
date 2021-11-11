@@ -52,15 +52,19 @@
     max-width: 100%;
     height: auto
 }
-@media (max-width: 1300px) {
+@media (max-width: 1280px) {
     .hero--header-text{
-        height: 30vh;
+        height: 28vh;
+    }
+}
+@media (max-width: 1024px) {
+    .hero--header-text{
+        height: 23vh;
     }
 }
 @media(max-width: 990px){
     .hero--header-text{
         text-align: center;
-        /* height: auto; */
         height: 20vh;
 
     }
@@ -92,6 +96,11 @@
     }
     .hero--bottom-text {
         font-size: 1rem;
+    }
+}
+@media(max-width: 300px){
+    .hero--header-text{
+        height: 25vh;
     }
 }
 /*<------------------------------------- Services CSS ------------------------------------->*/
@@ -196,10 +205,10 @@
     }
 }
 /*<------------------------------------- Mapbox CSS ------------------------------------->*/
-.contact--map{
+/* .contact--map{
     height: 100vh !important;
     width: auto !important;
-}
+} */
 @media(max-width: 990px){
     .contact--map{
         height: 50vh !important;

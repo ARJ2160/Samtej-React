@@ -33,20 +33,20 @@ const Mapbox = () => {
     //     </div>
     // )
     return (
-        <BingMapsReact
-            bingMapsKey="AoA_wWImy_NyIVWxAUtJGkIqAwhnxaTzhKVVrGLBfT80S4R4HFESaL5DTh-6zz79"
-            height="500px"
-            onMapReady="null"
-            mapOptions={{
-            navigationBarMode: "square",
-            }}
-            width="500px"
-            viewOptions={{
-                center: { latitude: 18.462329864338695, longitude: 73.81365477686839 },
-                zoom: 19,
-                mapTypeId: "road",
-            }}
-        />
+        <div className="col-lg-6 p-4 mt-3 contact--map">
+            <BingMapsReact
+                bingMapsKey="AoA_wWImy_NyIVWxAUtJGkIqAwhnxaTzhKVVrGLBfT80S4R4HFESaL5DTh-6zz79"
+                onMapReady={null}
+                mapOptions={{
+                navigationBarMode: "square",
+                }}
+                viewOptions={{
+                    center: { latitude: 18.462329864338695, longitude: 73.81365477686839 },
+                    zoom: 19,
+                    mapTypeId: "road",
+                }}
+            />
+        </div>
     )
 }
 
