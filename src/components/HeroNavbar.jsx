@@ -7,20 +7,20 @@ import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 const HeroNavbar = () => {
 
     return (
-        <Navbar className="main--navigation" expand="lg" fixed="top" style={{ backgroundColor: "#D1E8E4" }}>
+        <Navbar className="main--navigation mb-5" expand="lg" fixed="top" style={{ backgroundColor: "#D1E8E4" }}>
             <Container>
-                <Navbar.Brand href="#"><img src={company_logo} style={{width: "50px", height: "50px"}} alt="brand-logo" /></Navbar.Brand>
+                <Navbar.Brand href="/"><img src={company_logo} style={{width: "50px", height: "50px"}} alt="brand-logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <NavDropdown title="Products" className="me-5 text-black" style={{ color: "#000000" }} id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Shirt Printing Machine</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Card Manufacturing Machine</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Some Good Shit</NavDropdown.Item>
+                        <NavDropdown title="Products" className="me-5 text-black" id="basic-nav-dropdown">
+                            <NavDropdown.Item href="shirtmachines">Shirt Printing Machine</NavDropdown.Item>
+                            <NavDropdown.Item href="cardmachines">Card Manufacturing Machine</NavDropdown.Item>
+                            <NavDropdown.Item href="goodshit">Some Good Shit</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#about" className="me-5" style={{ color: "#000000" }}>About</Nav.Link>
-                        <Nav.Link href="#awards" className="me-5" style={{ color: "#000000" }}>Awards</Nav.Link>
-                        <Nav.Link href="#contact" style={{ color: "#000000" }}>Contact</Nav.Link>
+                        <Nav.Link href="/#about" className="me-5" style={{ color: "#000000" }}>About</Nav.Link>
+                        <Nav.Link href="/#awards" className="me-5" style={{ color: "#000000" }}>Awards</Nav.Link>
+                        <Nav.Link href="/#contact" style={{ color: "#000000" }}>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

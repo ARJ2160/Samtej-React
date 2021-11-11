@@ -46,7 +46,7 @@ const Hero = () => {
 
     return (
         <section id="hero">
-            <div className="hero--section text-white side-padding">
+            <div className="hero--section text-white side-padding d-flex flex-column justify-content-between">
                 <div className="hero--section-upper">
                     <div className="row hero--header" style={{ margin: 'auto'}}>
                         <div className="col-lg-6 p-3">

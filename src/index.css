@@ -31,11 +31,7 @@
     font-size: 4.5vw;
     line-height: 1.5;
     font-weight: 650;
-    letter-spacing: 2px;
     pointer-events: none;
-    /* height: 40vh; */
-}
-.hero--header{
     height: 40vh;
 }
 .hero--bottom-text > h4{
@@ -56,20 +52,17 @@
     max-width: 100%;
     height: auto
 }
-@media (max-width: 1500px){
-    .hero--header{
-        height: 20vh;
-    }
-}
-@media(max-width: 1024px){
-    .hero--header{
-        height: auto;
+@media (max-width: 1300px) {
+    .hero--header-text{
+        height: 30vh;
     }
 }
 @media(max-width: 990px){
     .hero--header-text{
         text-align: center;
-        height: auto;
+        /* height: auto; */
+        height: 20vh;
+
     }
     .hero--bottom-text > h4{
         text-align: center !important;
@@ -213,8 +206,8 @@
     }
 }
 /*<------------------------------------- Product Section CSS ------------------------------------->*/
-.carousel{
+/* .carousel{
     background-color: #292C33;
     width: 100%;
     height: auto;
-}
+} */
