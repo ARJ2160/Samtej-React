@@ -11,7 +11,7 @@ function CardMachines() {
                     const { id, img, card_body, cut_size, power, frequency, capacity } = cards
                     return (
                         <div className="card align-items-center col-lg-4 m-2" style={{ width: '18rem' }} key={id}>
-                                <img src={img} class="card-img-top" alt="..." />
+                                <img src={img} class="card-img-top" alt="Card Machines" loading="lazy" />
                                 <div class="card-body">
                                     <h5 class="card-title">{card_body}</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

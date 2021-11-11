@@ -14,9 +14,9 @@ const HeroNavbar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <NavDropdown title="Products" className="me-5 text-black" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="shirtmachines">Shirt Printing Machine</NavDropdown.Item>
-                            <NavDropdown.Item href="cardmachines">Card Manufacturing Machine</NavDropdown.Item>
-                            <NavDropdown.Item href="goodshit">Some Good Shit</NavDropdown.Item>
+                            <NavDropdown.Item href="/shirtmachines">Shirt Printing Machine</NavDropdown.Item>
+                            <NavDropdown.Item href="/cardmachines">Card Manufacturing Machine</NavDropdown.Item>
+                            <NavDropdown.Item href="/goodshit">Some Good Shit</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/#about" className="me-5" style={{ color: "#000000" }}>About</Nav.Link>
                         <Nav.Link href="/#awards" className="me-5" style={{ color: "#000000" }}>Awards</Nav.Link>
