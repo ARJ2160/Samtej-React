@@ -3,11 +3,17 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-display: swap;
+    --transition: all 0.2s linear;
+    --btncolor: #eebbc3;
+    --main--bg-color: #232946;
+    --main-text-color: #b8c1ec; 
+    --services-bg-color: #b8c1ec;
+    --awards-bg-color: #232946;
+    --awards-text-color: #b8c1ec;
 }
 .side-padding{
     padding: 30px;
@@ -25,12 +31,13 @@
 }
 /*<------------------------------------- Hero CSS ------------------------------------->*/
 .hero--section{
-    background-color: #111111;
+    background-color: var(--main--bg-color);
+    color: var(--main-text-color);
 }
 .hero--header-text{
     font-size: 4.5vw;
     line-height: 1.5;
-    font-weight: 650;
+    font-weight: 700;
     pointer-events: none;
     height: 40vh;
 }
@@ -38,16 +45,17 @@
     padding-bottom: 10px;
 }
 .about-button{
-    background-color:#eafcfc !important;
-    background-color: #87AAAA !important;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    outline: none;
+    background-color: var(--btncolor) !important;
+    color: #232946 !important;
+    transition: var(--transition);
+    padding: 1.2rem 2rem;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
 }
-.about-button:hover{
-    color: #fff !important;
-    background-color: #000 !important;
-}
+
 .hero--section-card > img {
     max-width: 100%;
     height: auto
@@ -105,9 +113,13 @@
 }
 /*<------------------------------------- Services CSS ------------------------------------->*/
 .services{
-    background-color:#eafcfc;
-    background-color: #87AAAA;
+    background-color: var(--services-bg-color);
     padding-top: 3rem;
+    color: #232946;
+}
+.services h1{
+    line-height: 1.3;
+    font-weight: 700;
 }
 .services-list ul li{
     list-style: disc;
@@ -116,25 +128,29 @@
 }
 /*<------------------------------------- Awards CSS ------------------------------------->*/
 .awards{
-    background-color: #292c33;
+    background-color: var(--awards-bg-color);
     padding-top: 3rem;
+}
+.awards h1{
+    line-height: 1.3;
+    font-weight: 700;
+    color: var(--awards-text-color);
+}
+.award--boxes{
+    padding-top: 2.5rem;
 }
 .outer-award-box{
     width: 50vw;
     position: relative;
     z-index: 2;
-    background-color:#eafcfc;
-    background-color: #87AAAA;
     border-radius: 10px;
+    background-color: #fff;
     box-shadow: -1px 6px 13px 0px rgba(255,255,255, 0.44);
     -webkit-box-shadow: -1px 6px 13px 0px rgba(255,255,255, 0.44);
     -moz-box-shadow: -1px 6px 13px 0px rgba(255,255,255, 0.44);
 }
-.flex-container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
+.card-title{
+    font-weight: 700;
 }
 @media (max-width: 990px){
     .award--boxes{
@@ -160,7 +176,7 @@
 }
 .bold-heading{
     font-size: 55.2px;
-    font-weight: 900;
+    font-weight: 700;
 }
 .form .txt-field{
     border-bottom: 2px solid #adadad;
@@ -176,12 +192,16 @@
     background: none;
     outline: none;
 }
-.send-request{
-    background-color:#eafcfc !important;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    margin-top: 3rem;
-    outline: none;
+.submit-btn{
+    background-color: var(--btncolor) !important;
+    color: #232946 !important;
+    transition: var(--transition);
+    padding: 1.2rem 2rem;
+    border-radius: 3px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
 }
 .send-request:hover{
     color: #fff !important;
@@ -205,18 +225,97 @@
     }
 }
 /*<------------------------------------- Mapbox CSS ------------------------------------->*/
-/* .contact--map{
-    height: 100vh !important;
-    width: auto !important;
-} */
 @media(max-width: 990px){
     .contact--map{
         height: 50vh !important;
     }
 }
-/*<------------------------------------- Product Section CSS ------------------------------------->*/
-/* .carousel{
-    background-color: #292C33;
-    width: 100%;
-    height: auto;
+/*<------------------------------------- Test Section CSS ------------------------------------->*/
+.nav-link{
+    color: #000 !important;
+}
+/* .navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #227eff;
+    display: block;
+    transition: 0.2s;
+}
+
+.middle-bar {
+    margin: 5px auto;
+} */
+
+/* .nav-toggle.transform .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.nav-toggle.transform .middle-bar {
+    opacity: 0;
+}
+
+.nav-toggle.transform .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.nav-toggle .top-bar {
+    transform: rotate(0);
+}
+
+.nav-toggle .middle-bar {
+    opacity: 1;
+}
+
+.nav-toggle .bottom-bar {
+        transform: rotate(0);
+}
+
+.nav-toggle .toggler-icon {
+    background-color: #6C63FF;
+} */
+
+/* Submenu */
+/* 
+.submenu {
+    background: var(--clr-white);
+    box-shadow: var(--dark-shadow);
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: none;
+    padding: 2rem;
+    border-radius: 30px;
+    transition: var(--transition);
+}
+.submenu::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.submenu.show {
+    display: block;
 } */

@@ -1,26 +1,26 @@
-import card_cutter from "./assets/carousel/motorized_card_cutter.webp"
+import card_cutter from "./assets/products/motorized_card_cutter.webp"
+import die_punch_card_cutter from "./assets/products/die_punch_card_cutter.webp"
 
 const card_products = [
     {
         "id": "1",
-        "type": "card-cutter",
         "img": card_cutter,
-        "card_body": "800W Motorized Card Cutter Machine",
+        "card_title": "Single DIE - PUNCH Cutter",
+        "card_body": "Motorized Card Cutter",
+        "dimensions" : "300 x 550 x 290 mm",
         "cut_size" : "86 x 54 x 1.2 mm thick",
-        "power": "800W, 380V AC Single Phase",
-        "frequency": "50Hz",
-        "capacity": "200 Cards per hour."
+        "power": "375W, 230V AC",
+        "capacity": "900 Cards per hour."
     },
     {
         "id": "2",
-        "type": "card-cutter",
-        "img": card_cutter,
-        "card_body": "200W PVC Card Making Machine",
-        "weight": "9kg",
+        "img": die_punch_card_cutter,
+        "card_title": "2 DIE - PUNCH Cutter",
+        "card_body": "Motorized Card Cutter",
+        "dimensions" : "360 x 550 x 290 mm",
         "cut_size" : "86 x 54 x 1.2 mm thick",
-        "power": "200W, 240V AC Single Phase",
-        "frequency": "50Hz",
-        "capacity": "300 Cards per hour."
+        "power": "375 W, 230V AC",
+        "capacity": "1800 Cards per hour."
     }
 ]
 

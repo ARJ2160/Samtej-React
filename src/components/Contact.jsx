@@ -52,7 +52,7 @@ const Contact = () => {
                             />
                         </div>
                     </form>
-                    <button type="submit" className="btn send-request" onClick={sendData}>Submit</button>
+                    <button type="submit" className="submit-btn mt-3" onClick={sendData}>Submit</button>
                     <div className="contact--find-us pt-5">
                         <span className="bold-heading">Find Us</span>
                         <div className="contact--address mt-4">
@@ -65,10 +65,10 @@ const Contact = () => {
                         <div className="contact--social-media pt-5">
                             <h1>Social Media</h1>
                             <div className="footer--social--icons d-flex">
-                                <a href="https://www.instagram.com/arj_2160/" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
+                                <a href="https://www.facebook.com/SanjayJoshiSLK/" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
                                     <FaFacebook className="img-fluid me-5 mt-4" style={{ width: "40px", height: "40px" }}/>
                                 </a>
-                                <a href="https://www.linkedin.com/in/atharva-joshi-5657991b3/" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
+                                <a href="https://www.linkedin.com/in/sanjay-joshi-339ab126?fromQR=1" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
                                     <FaLinkedin className="img-fluid me-5 mt-4" style={{ width: "40px", height: "40px" }}/>
                                 </a>
                                 <a href="https://www.indiamart.com/samtej-industries/" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">

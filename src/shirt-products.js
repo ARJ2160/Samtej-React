@@ -1,27 +1,16 @@
-import single_tray_handpump from "./assets/carousel/single_tray_handpump.webp"
-import double_tray_handpump from "./assets/carousel/double_tray_handpump.webp"
+import t_shirt_machine from "./assets/products/t-shirt-machine.webp"
 
 const shirt_prints = [
     {
         "id": "1",
-        "type": "hydraulic-system",
-        "img": single_tray_handpump,
-        "card_body": "Single Tray Air & Water Cooled Hydraulic System.",
-        "power": "1.2 KW 230 V AC Single Phase.",
-        "media": "ABS, PVC, Teslin, PET-G",
-        "plate_size": "110 x 297 mm",
-        "capacity": "200 — 250 Cards 30 Minutes cycle time"
-    },
-    {
-        "id": "2",
-        "type": "hydraulic-system",
-        "img": double_tray_handpump,
-        "card_body": "Double Tray Water cooled Automatic 3 Stage Hydraulic system",
-        "power": "4.2 KW 230 V AC Single Phase",
-        "media": "Media : ABS, PVC, Teslin, PET-G",
-        "plate_size": "210 x 297 mm",
-        "capacity": "200 Cards 30 Minutes cycle time"
-    },
+        "img": t_shirt_machine,
+        "card_title": "Automatic Pneumatic (Flatbed) Heat Press Machine.",
+        // "card_body": "Roll to Roll system available.",
+        "dimensions" : "370mm x 1250 x 1500 mm",
+        "power": " 3 KW 230V AC Single Phase",
+        "plate_size": "Standard Size - 330 x 1050 mm",
+        "batch_time": "40 to 70 seconds"
+    }
 ]
 
 export default shirt_prints

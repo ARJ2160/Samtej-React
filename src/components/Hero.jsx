@@ -46,11 +46,11 @@ const Hero = () => {
 
     return (
         <section id="hero">
-            <div className="hero--section text-white side-padding d-flex flex-column justify-content-between">
+            <div className="hero--section side-padding d-flex flex-column justify-content-between">
                 <div className="hero--section-upper">
                     <div className="row hero--header" style={{ margin: 'auto'}}>
                         <div className="col-lg-6 p-3">
-                            <h1 className="hero--header-text pt-5">
+                            <h1 className="hero--header-text">
                                 {`${words[index].substring(0, subIndex)}${blink ? "|" : ""}`}
                             </h1>
                         </div>
@@ -66,7 +66,7 @@ const Hero = () => {
                             <h4>We solely manufacture fully automated hydraulic fusing machines, motorised card cutters and T-shirt printing machines.</h4>
                             <h4>Our aim is to deliver quality products with maximum customer satisfaction.</h4>
                         <div className="hero--about-button">
-                            <a href="#about"><button className="btn about-button mt-5" rel="noreferrer" style={{ float: 'right' }}>About Us</button></a>
+                            <a href="#about"><button className=" about-button mt-3" rel="noreferrer" style={{ float: 'right' }}>About Us</button></a>
                         </div>
                     </div>
                 </div>

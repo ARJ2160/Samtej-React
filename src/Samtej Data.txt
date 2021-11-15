@@ -1,0 +1,130 @@
+############################ Motorized Cutter or Single DIE - PUNCH Cutter  ######################################
+
+Info : Motorized Card Cutter
+Dimensions : 300 x 550 x 290 mm 
+Approx .Power : 375 W, 230V AC 
+Speed : 900 Cards per hour.
+CuttingSize : 86 x 54 x 1.2 mm
+
+
+############################## Motorized Cutter or 2 DIE - PUNCH Cutter ############################################3
+
+Info : Motorized Card Cutter
+Dimensions : 360 x 550 x 290 mm 
+Approx .Power : 375 W, 230V AC 
+Speed : 1800 Cards per hour.
+CuttingSize : 86 x 54 x 1.2 mm
+
+############################# A5050HP Handpump operated #################################################################
+
+Info : Single Tray Air & water cooled Hydraulic system . 
+       Easy settings with User friendly operation along with 4 Paper channel programming. 
+       Microcontroller Based solid state electronics.
+       Manual 2 stage pressure system.
+Dimensions : 460 x 360 x 350 mm
+Media : PVC, Teslin, PET-G, Polycarbonate
+Power : 1.2 KW 230 V AC Single Phase.
+Plate Size : 110 x 297 mm
+Capacity : 50 cards per batch.
+Batch time : 30 mins approx.
+
+############################### A4101HP Handpump operated ##################################################################
+
+Info : Single Tray Air & Water cooled Hydraulic system . 
+       Easy settings with User friendly operation along with 4 Paper channel programming. 
+       Microcontroller Based solid state electronics.
+       Manual 2 stage pressure system.
+Dimensions : 500 x 550 x 410 mm Single Tray
+Media : PVC, Teslin, PET-G, Polycarbonate
+Power : 2.2 /3.5 KW 230 V AC Single Phase
+Plate Size : 210 x 297 mm.
+Capacity : 100 cards per batch.
+Batch time : 30 mins approx.
+
+############################### A4101A Full Automatic #####################################################################
+
+Info : Single Tray Water cooled Hydraulic system.  
+       Microcontroller Based solid state electronics.
+       3 stage full Automatic Hydraulic pressure system.
+       Easy settings with User friendly operation along with 4 Paper channel programming.
+Dimensions : 630 x 550 x 410 mm 
+Media : PVC, Teslin, PET-G, Polycarbonate
+Power : 2.4/4.5 KW 230 V AC Single Phase
+Plate Size : 210 x 297 mm
+Capacity : 100 cards per batch. 
+Batch time : 30 mins approx.
+
+################################# A4201HP Handpump operated ##########################################################
+
+Info : Double Tray Air & Water cooled Hydraulic system. 
+       Easy settings with User friendly operation along with 4 Paper channel programming.
+       Microcontroller Based solid state electronics.
+       Manual 2 stage pressure system.
+Dimensions : 730 x 550 x 410 mm
+Media : PVC, Teslin, PET-G, Polycarbonate
+Power : 3.6 KW 230 V AC Single Phase
+Plate Size : 210 x 297 mm
+Capacity : 200 Cards per batch.
+Batch time : 30 mins approx.
+
+############################### A3480HP Handpump operated #############################################################
+
+Info: Double Tray Water cooled Hydraulic system. 
+      Easy settings with User friendly operation along with 4 Paper channel programming.
+      Microcontroller Based solid state electronics.
+      Manual 2 stage pressure system.
+Dimensions  : 650 x 750 x 1250 mm
+Media : PVC, Teslin, PET-G,
+Power : 5.5 KW 230 V AC Single  / Three Phase
+Plate Size : 330 x 483 mm
+Capacity : 480 Cards per batch.
+Batch time : 30 mins approx.
+
+############################### A3480A Full Automatic  #################################################################
+
+Info: Double Tray Water cooled Hydraulic system. 
+      Easy settings with User friendly operation along with 4 Paper channel programming.
+      Microcontroller Based solid state electronics.
+      Automatic 3 stage pressure system.
+Dimensions  : 650 x 750 x 1250 mm
+Media : PVC, Teslin, PET-G,
+Power : 9.7 KW 230 V AC  Three  Phase
+Plate Size : 330 x 483 mm
+Capacity : 480/500 per batch.
+Batch time : 30 mins approx.
+
+############################# A3250A Full Automatic ###############################################################
+
+Info: Single Tray Water cooled Hydraulic system. 
+      Easy settings with User friendly operation along with 4 Paper channel programming.
+      Microcontroller Based solid state electronics.
+      Automatic 3 stage pressure system.
+Dimensions  : 650 x 750 x 1250 mm
+Media : PVC, Teslin, PET-G,
+Power : 6.5 KW 230 V AC  Three  Phase
+Plate Size : 330 x 483 mm
+Capacity : 240/250 per batch.
+Batch time : 30 mins approx.
+
+######################################### A3750A Full Automatic #######################################################
+
+Info: Triple Tray Water cooled Hydraulic system. 
+      Easy settings with User friendly operation along with 4 Paper channel programming.
+      Microcontroller Based solid state electronics.
+      Automatic 3 stage pressure system.
+Dimensions  : 650 x 750 x 1250 mm
+Media : PVC, Teslin, PET-G,
+Power : 12.5 KW 230 V AC  Three  Phase
+Plate Size : 330 x 483 mm
+Capacity : 720/750 per batch.
+Batch time : 30 mins approx.
+
+##################################### T-Shirt Printing Machine #########################################################
+
+Info: Automatic Pneumatic (Flatbed) Heat Press Machine.
+      Roll to Roll system available.
+Dimensions: 370mm x 1250 x 1500 mm.
+Power: 3 KW 230V AC Single Phase.
+Plate Size: Standard Size - 330 x 1050 mm
+            Customisable as per requirement.
+Batch time: 40 to 70 seconds.

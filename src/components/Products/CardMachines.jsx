@@ -5,28 +5,28 @@ import "../../index.css"
 function CardMachines() {
     return (
         <section id="cardmachines">
-            <div className="row product-section side-padding pt-5 me-0">
+            <div className="row product-section side-padding justify-content-center pt-5 me-0 general-padding">
                 <h1 className="text-center pt-5">Card Making Machines</h1>
                 {card_products.map((cards) => {
-                    const { id, img, card_body, cut_size, power, frequency, capacity } = cards
+                    const { id, img, card_title, card_body, cut_size, dimensions, power, capacity } = cards
                     return (
-                        <div className="card align-items-center col-lg-4 m-2" style={{ width: '18rem' }} key={id}>
-                                <img src={img} class="card-img-top" alt="Card Machines" loading="lazy" />
-                                <div class="card-body">
-                                    <h5 class="card-title">{card_body}</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div className="card align-items-center col-lg-4 m-2 pe-0 ps-0" style={{ width: '18rem' }} key={id}>
+                                <img src={img} className="card-img-top" alt="Card Machines" />
+                                <div className="card-body">
+                                    <h5 className="card-title">{card_title}</h5>
+                                <p className="card-text">{card_body}</p>
                                 </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">{cut_size}</li>
-                                    <li class="list-group-item">{frequency}</li>
-                                    <li class="list-group-item">{power}</li>
-                                    <li class="list-group-item">{capacity}</li>
+                            <ul className="list-group list-group-flush">
+                                    <li className="list-group-item"><strong>Power: </strong>{power}</li>
+                                    <li className="list-group-item"><strong>Dimensions: </strong>{dimensions}</li>
+                                    <li className="list-group-item"><strong>Cut Size: </strong>{cut_size}</li>
+                                    <li className="list-group-item"><strong>Capacity: </strong>{capacity}</li>
                                 </ul>
-                                {/* <div class="card-body">
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
-                                </div> */}
-                                </div>
+                            {/* <div className="card-body">
+                                <a href="#" className="card-link">Card link</a>
+                                <a href="#" className="card-link">Another link</a>
+                            </div> */}
+                        </div>
                     )}
                 )}
                 </div>
