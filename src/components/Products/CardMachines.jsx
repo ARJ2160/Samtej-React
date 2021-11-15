@@ -6,7 +6,7 @@ function CardMachines() {
     return (
         <section id="cardmachines">
             <div className="row product-section side-padding justify-content-center pt-5 me-0 general-padding">
-                <h1 className="text-center pt-5">Card Making Machines</h1>
+                <h1 className="text-center product-heading pt-5 pb-3">Card Making Machines</h1>
                 {card_products.map((cards) => {
                     const { id, img, card_title, card_body, cut_size, dimensions, power, capacity } = cards
                     return (

@@ -6,7 +6,7 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import ShirtMachines from "./components/Products/ShirtMachines"
 import CardMachines from "./components/Products/CardMachines"
-import Goodshit from "./components/Products/Goodshit"
+import HeatMachines from "./components/Products/HeatMachines"
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
@@ -23,9 +23,9 @@ function App() {
                     <CardMachines />
                     <Footer />
                 </Route>
-                <Route exact path="/goodshit">
+                <Route exact path="/heatmachines">
                     <Navbar />
-                    <Goodshit />
+                    <HeatMachines />
                     <Footer />
                 </Route>
                 <Route exact path="/">

@@ -234,6 +234,10 @@
 .nav-link{
     color: #000 !important;
 }
+.product-heading{
+    line-height: 1.3;
+    font-weight: 700;
+}
 /* .navbar-toggler {
     border: 0 !important;
 }

@@ -1,13 +1,13 @@
 import React from 'react'
-import good_shit from "../../good-shit"
+import heat_machines from "../../heat-machines"
 import "../../index.css"
 
-function Goodshit() {
+function HeatMachines() {
     return (
         <section id="cardmachines">
             <div className="row product-section side-padding justify-content-center pt-5 me-0 general-padding">
-                <h1 className="text-center pt-5">A lot of Good Shit</h1>
-                {good_shit.map((shit) => {
+                <h1 className="text-center product-heading pt-5 pb-3">Heat Fusing Machines</h1>
+                {heat_machines.map((shit) => {
                     const { id, img, card_title, card_body, model, plate_size ,power, capacity } = shit
                     return (
                         <div className="card align-items-center col-lg-4 m-2 pe-0 ps-0" style={{ width: '18rem' }} key={id}>
@@ -22,10 +22,6 @@ function Goodshit() {
                                 <li className="list-group-item">{power}</li>
                                 <li className="list-group-item">{capacity}</li>
                             </ul>
-                            {/* <div className="card-body">
-                                <a href="#" className="card-link">Card link</a>
-                                <a href="#" className="card-link">Another link</a>
-                            </div> */}
                         </div>
                     )}
                 )}
@@ -34,4 +30,4 @@ function Goodshit() {
     )
 }
 
-export default Goodshit
+export default HeatMachines

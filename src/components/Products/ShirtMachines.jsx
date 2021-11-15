@@ -6,7 +6,7 @@ function ShirtMachines() {
     return (
         <section id="cardmachines">
             <div className="row product-section side-padding pt-5 me-0 justify-content-center general-padding">
-                <h1 className="text-center pt-5">Shirt Printing Machines</h1>
+                <h1 className="text-center product-heading pt-5 pb-3">Shirt Printing Machines</h1>
                 {shirt_prints.map((shirts) => {
                     const { id, img, card_title, dimensions, power, plate_size, batch_time } = shirts
                     return (

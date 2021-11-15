@@ -5,10 +5,11 @@ import double_tray_A4201HP from "./assets/products/double_tray_A4201HP.webp"
 import double_tray_A3480A from "./assets/products/double_tray_A3480A.webp"
 import single_tray_A3250A from "./assets/products/single_tray_A3250A.webp"
 import triple_tray_A3750A from "./assets/products/triple_tray_A3750A.webp"
+import { v4 as uuidv4 } from 'uuid';
 
-const good_shit = [
+const heat_machines = [
     {
-        "id": "1",
+        "id": uuidv4(),
         "img": single_tray_A5050HP,
         "card_title": "Single Tray Water Cooled Hand Pump Hydraulic System",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Manual 2 stage pressure system.",
@@ -21,7 +22,7 @@ const good_shit = [
         "batch_time" : "30 mins approx"
     },
     {
-        "id": "2",
+        "id": uuidv4(),
         "img": single_tray_A4101HP,
         "card_title" : "Single Tray Air & Water Cooled Hydraulic System",
         "card_body": " Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Manual 2 stage pressure system.",
@@ -34,7 +35,7 @@ const good_shit = [
         "batch_time" : "30 mins approx"
     },
     {
-        "id": "3",
+        "id": uuidv4(),
         "img": single_tray_A4101A,
         "card_title" : "Single Tray Air & Water Cooled Hydraulic System",
         "card_body": " Microcontroller Based solid state electronics. 3 stage full Automatic Hydraulic pressure system. Easy settings with User friendly operation along with 4 Paper channel programming",
@@ -47,7 +48,7 @@ const good_shit = [
         "batch_time" : "30 mins approx"
     },
     {
-        "id": "4",
+        "id": uuidv4(),
         "img": double_tray_A4201HP,
         "card_title" : "Double Tray Air & Water Cooled Hydraulic System",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Manual 2 stage pressure system.",
@@ -60,7 +61,7 @@ const good_shit = [
         "batch_time" : "30 mins approx"
     },
     {
-        "id": "5",
+        "id": uuidv4(),
         "img": double_tray_A3480A,
         "card_title" : "Double Tray Water Cooled Hydraulic System",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics.",
@@ -73,7 +74,7 @@ const good_shit = [
         "batch_time" : "30 mins approx"
     },
     {
-        "id": "6",
+        "id": uuidv4(),
         "img": double_tray_A3480A,
         "card_title" : "Double Tray Water Cooled Hydraulic System",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Automatic 3 stage pressure system.",
@@ -86,7 +87,7 @@ const good_shit = [
         "batch_time" : "30 mins approx"
     },
     {
-        "id": "7",
+        "id": uuidv4(),
         "img": single_tray_A3250A,
         "card_title" : "Single Tray Water Cooled Hydraulic System",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Automatic 3 stage pressure system.",
@@ -99,7 +100,7 @@ const good_shit = [
         "batch_time" : "30 mins approx"
     },
     {
-        "id": "8",
+        "id": uuidv4(),
         "img": triple_tray_A3750A,
         "card_title" : "Triple Tray Water Cooled Hydraulic System",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Automatic 3 stage pressure system.",
@@ -113,4 +114,4 @@ const good_shit = [
     },
 ]
 
-export default good_shit
+export default heat_machines
