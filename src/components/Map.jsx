@@ -1,7 +1,6 @@
 import React from 'react'
 import "../index.css"
 import BingMapsReact from "bingmaps-react";
-require('dotenv').config()
 
 const Map = () => {
 
