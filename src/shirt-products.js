@@ -1,9 +1,8 @@
 import t_shirt_machine from "./assets/products/t-shirt-machine.webp"
-import { v4 as uuidv4 } from 'uuid';
 
 const shirt_prints = [
     {
-        "id": uuidv4(),
+        "id": "1",
         "img": t_shirt_machine,
         "card_title": "Automatic Pneumatic (Flatbed) Heat Press Machine.",
         "dimensions" : "370mm x 1250 x 1500 mm",

@@ -1,6 +1,8 @@
 import React, { useState, useEffect  } from 'react'
 import "../index.css"
 import card from "../assets/hero_card.svg"
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Hero = () => {
 
@@ -10,9 +12,15 @@ const Hero = () => {
     const [reverse, setReverse] = useState(false);
     const words = ["Simplifying Card Manufacturing"]
     
-    // Typewriter Logic
+    // TYPEWRITER LOGIC
     useEffect(() => {
 
+        Aos.init({
+            duration: 2000,
+            once: true
+        });
+
+        //Typewriter effect
         if (index === words.length) return;
 
         if ( subIndex === words[index].length + 1 &&
@@ -33,10 +41,11 @@ const Hero = () => {
                     150, parseInt(Math.random() * 100)));
 
         return () => clearTimeout(timeout);
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [subIndex, index, reverse]);
 
-    //Blink Logic
+    //BLINK LOGIC
     useEffect(() => {
         const timeout2 = setTimeout(() => {
             setBlink((prev) => !prev);
@@ -58,13 +67,13 @@ const Hero = () => {
                 </div>
                 <div className="hero--section-bottom row p-3" style={{ margin: 'auto'}}>
                     <div className="hero--section-card col-lg-6">
-                        <img className="hero--card img-fluid" src={card} alt="hero-card" />
+                        <img data-aos="fade-right" className="hero--card img-fluid" src={card} alt="hero-card" />
                     </div>
-                    <div className="hero--bottom-text text-end lead pt-5 col-lg-6" style={{ fontSize: "1.65rem" }}>
-                            <h4>We deliver quality products at affordable prices.</h4>
-                            <h4>Our goal is to provide Smart Card solutions.</h4>
-                            <h4>We solely manufacture fully automated hydraulic fusing machines, motorised card cutters and T-shirt printing machines.</h4>
-                            <h4>Our aim is to deliver quality products with maximum customer satisfaction.</h4>
+                    <div data-aos="fade-left" className="hero--bottom-text text-end lead pt-5 col-lg-6" style={{ fontSize: "1.65rem" }}>
+                        <h4>We deliver quality products at affordable prices.</h4>
+                        <h4>Our goal is to provide Smart Card solutions.</h4>
+                        <h4>We solely manufacture fully automated hydraulic fusing machines, motorised card cutters and T-shirt printing machines.</h4>
+                        <h4>Our aim is to deliver quality products with maximum customer satisfaction.</h4>
                         <div className="hero--about-button">
                             <a href="#about"><button className=" about-button mt-3" rel="noreferrer" style={{ float: 'right' }}>About Us</button></a>
                         </div>

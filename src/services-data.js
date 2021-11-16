@@ -18,7 +18,7 @@ const services = [
     {
         "id": "5",
         "desc": "We believe in conferring products and services as per international standards. Customer satisfaction is the pinnacle of a thriving company; and we aim to attain that through our services. Our products have gained a huge appreciation for their high quality, low maintenance and user friendly features. We use high grade raw material for manufacturing which is procured from trusted vendors to ensure international quality standards."
-    },
+    }
 ]
 
 export default services;

@@ -5,7 +5,7 @@ const Footer = () => {
     let year = new Date().getFullYear()
     return (
         <section id="footer">
-            <div className="bottom--footer text-black  d-flex justify-content-center align-items-center" style={{ backgroundColor: 'grey', height: '7vh' }}>
+            <div className="bottom--footer text-white d-flex justify-content-center align-items-center" style={{ backgroundColor: "#232946", height: '7vh' }}>
                 <h6 className="mb-0" style={{ fontSize: "13px", fontWeight: 'bold' }}>&copy; {year} COPYRIGHT SAMTEJ INDUSTRIES LLP</h6>
             </div>
         </section>

@@ -8,8 +8,8 @@ import "../index.css"
 
 const HeroNavbar = () => {
 
-return (
-        <Navbar className="main--navigation" expand="lg" style={{ color: "#000000" }}>
+    return (
+        <Navbar className="main--navigation" expand="lg" style={{ backgroundColor: "#b8c1ec", color: "#000000"}}>
             <Container>
                 <Navbar.Brand href="/"><img src={company_logo} style={{width: "50px", height: "50px"}} alt="brand-logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -28,14 +28,9 @@ return (
             </Container>
         </Navbar>
     )
-    
-
 }
 
 export default HeroNavbar
-
-
-
 
 // return (
     //     <nav>
@@ -74,10 +69,3 @@ export default HeroNavbar
     //         </div>
     //     </nav>
     // )
-
-
-
-
-
-
-    
