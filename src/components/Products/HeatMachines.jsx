@@ -5,7 +5,7 @@ import "../../index.css"
 function HeatMachines() {
     return (
         <section id="cardmachines">
-            <div className="row product-section side-padding justify-content-center pt-5 me-0 general-padding">
+            <div className="row product-section side-padding justify-content-center mb-4 pt-4 me-0 general-padding">
                 <h1 className="text-center product-heading pt-5 pb-3">Heat Fusing Machines</h1>
                 {heat_machines.map(e => {
                     const { id, img, card_title, card_body, model, plate_size , power, capacity } = e
@@ -17,10 +17,10 @@ function HeatMachines() {
                                 <p className="card-text">{card_body}</p>
                             </div>
                             <ul className="list-group list-group-flush">
-                                <li className="list-group-item">{model}</li>
-                                <li className="list-group-item">{plate_size}</li>
-                                <li className="list-group-item">{power}</li>
-                                <li className="list-group-item">{capacity}</li>
+                                <li className="list-group-item"><strong>Model No: </strong>{model}</li>
+                                <li className="list-group-item"><strong>Plate Size: </strong>{plate_size}</li>
+                                <li className="list-group-item"><strong>Power: </strong>{power}</li>
+                                <li className="list-group-item"><strong>Capacity: </strong>{capacity}</li>
                             </ul>
                         </div>
                     )}

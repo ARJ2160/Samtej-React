@@ -8,8 +8,19 @@ import ShirtMachines from "./components/Products/ShirtMachines"
 import CardMachines from "./components/Products/CardMachines"
 import HeatMachines from "./components/Products/HeatMachines"
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { useEffect } from "react"
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 function App() {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 2000,
+            once: true,
+        })
+    }, [])
+
     return (
         <Router>
             <div className="App">

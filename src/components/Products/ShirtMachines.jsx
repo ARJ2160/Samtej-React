@@ -5,7 +5,7 @@ import "../../index.css"
 function ShirtMachines() {
     return (
         <section id="cardmachines">
-            <div className="row product-section side-padding pt-5 me-0 justify-content-center general-padding">
+            <div className="row product-section side-padding mb-4 pt-4 me-0 justify-content-center general-padding">
                 <h1 className="text-center product-heading pt-5 pb-3">Shirt Printing Machines</h1>
                 {shirt_prints.map(shirts => {
                     const { id, img, card_title, dimensions, power, plate_size, batch_time } = shirts

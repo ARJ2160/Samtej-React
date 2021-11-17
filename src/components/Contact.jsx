@@ -1,19 +1,10 @@
-import React, { useEffect, useState, Suspense, lazy } from 'react'
+import React, { useState, Suspense, lazy } from 'react'
 import "../index.css"
 import { FaFacebook, FaLinkedin, FaShoppingCart } from 'react-icons/fa';
-import Aos from "aos"
-import "aos/dist/aos.css"
 
 const Map = lazy(() => import('./Map'));
 
 const Contact = () => {
-    
-    useEffect(() => {
-        Aos.init({
-            duration: 2000,
-            once: true,
-        })
-    }, [])
 
     //Form Settings
     const [email, setMail] = useState('');
@@ -24,9 +15,8 @@ const Contact = () => {
     const form = document.forms['google-sheet']
 
     function sendData(e) {
-
         e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
             .then(res => alert("Message sent Successfully!"))
             .catch(error => console.error('Error!', error.message))
 
@@ -36,20 +26,21 @@ const Contact = () => {
     }
 
     return (
-        <section id="contact" className="text-white side-padding">
-            <div data-aos="fade-up">
+        <section id="contact" className="text-white side-padding" style={{ height: 'auto' }}>
+            <div data-aos="fade-down">
                 <span className="contact--text bold-heading">Contact Us</span>
                 <div className="row me-0">
                     <div className="form col-lg-6 p-3">
                         <form method = "post" name="google-sheet">
                             <div className="txt-field">
                                 <input
-                                    type="mail"
+                                    type="email"
                                     name="Name"
                                     placeholder="Email*"
                                     value={email}
                                     onChange={e => { setMail(e.target.value) }}
                                     autoComplete="off"
+                                    required
                                 />
                             </div>
                             <div className="txt-field mt-5 pt-5">
@@ -60,6 +51,7 @@ const Contact = () => {
                                     value={message}
                                     onChange={e => { setMessage(e.target.value) }}
                                     autoComplete="off"
+                                    required
                                 />
                             </div>
                         </form>
