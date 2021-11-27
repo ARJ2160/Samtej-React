@@ -6,58 +6,96 @@ const Map = lazy(() => import('./Map'));
 
 const Contact = () => {
 
-    //Form Settings
-    const [email, setMail] = useState('');
-    const [message, setMessage] = useState('');
+    //Form settings
+    const initialState = {
+        Email: '',
+        Message: ''
+    }
+    const [formValues, setFormValue] = useState(initialState)
+    const [formErrors, setFormErrors] = useState({})
+    const [isSubmit, setIsSubmit] = useState(false)
 
     //Send Message to Google Form
     const scriptURL = 'https://script.google.com/macros/s/AKfycbz0uimyevS_X45Ky0ieFwixxh_EAcxCNv0yAz0aZx43OJlea0a0HBJYxJ5DT2rh5J89/exec'
     const form = document.forms['google-sheet']
 
-    function sendData(e) {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(res => alert("Message sent Successfully!"))
-            .catch(error => console.error('Error!', error.message))
-
-        form.reset();
-        setMail('')
-        setMessage('')
+    const handleChange = e => {
+        const { name, value } = e.target
+        setFormValue({ ...formValues, [name]: value })
     }
 
+    const validate = (e, formValues) => {
+        e.preventDefault()
+        const errors = {}
+        const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!formValues.Email) {
+            errors.Email = "Email is Required"
+        }
+        else if (!regex.test(formValues.Email)) {
+            errors.Email = "Enter valid Email"
+        }
+        if (!formValues.Message) {
+            errors.Message = "Message is Required"
+        }
+
+        //Check if there are no errors
+        if (Object.keys(errors).length === 0) {
+            handleSubmit()
+            setIsSubmit(true)
+        } else {
+            errorMessage()
+        }
+        return errors
+    }
+
+    const errorMessage = () => {
+        alert("Resolve Errors First")
+    }
+
+    const handleSubmit = () => {
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .catch(error => console.error('Error!', error.message))
+
+        setFormValue({ Email: '', Message: '' })
+    }
+    
     return (
-        <section id="contact" className="text-white side-padding" style={{ height: 'auto' }}>
-            <div data-aos="fade-down">
+        <section id="contact" className="text-white side-padding pb-5" style={{ height: 'auto' }}>
+            <div data-aos="fade-up">
+                {Object.keys(formErrors).length === 0 && isSubmit ? <div className="text-white message-text">Message Sent Successfully</div> : "" }
                 <span className="contact--text bold-heading">Contact Us</span>
                 <div className="row me-0">
                     <div className="form col-lg-6 p-3">
-                        <form method = "post" name="google-sheet">
-                            <div className="txt-field">
-                                <input
-                                    type="email"
-                                    name="Name"
-                                    placeholder="Email*"
-                                    value={email}
-                                    onChange={e => { setMail(e.target.value) }}
-                                    autoComplete="off"
-                                    required
-                                />
-                            </div>
-                            <div className="txt-field mt-5 pt-5">
-                                <input
-                                    type="text"
-                                    name="Message"
-                                    placeholder="Message"
-                                    value={message}
-                                    onChange={e => { setMessage(e.target.value) }}
-                                    autoComplete="off"
-                                    required
-                                />
-                            </div>
+                        <form method="post" className="flex-column" name="google-sheet">
+                            <input
+                                className="txt-field"
+                                type="text"
+                                name="Email"
+                                placeholder="Email*"
+                                value={formValues.Email}
+                                onChange={handleChange}
+                                autoComplete="off"
+                            />
+                            <p className="form-errors">{formErrors.Email}</p>
+                            <input
+                                className="txt-field mt-5"
+                                type="text"
+                                name="Message"
+                                placeholder="Message*"
+                                value={formValues.Message}
+                                onChange={handleChange}
+                                autoComplete="off"
+                            />
+                            <p className="form-errors">{formErrors.Message}</p>
+                            <button
+                                onClick={(e) => { setFormErrors(validate(e, formValues)) }}
+                                type="submit"
+                                className="submit-btn mt-3"
+                            >Submit</button>
                         </form>
-                        <button type="submit" className="submit-btn mt-3" onClick={sendData}>Submit</button>
+
                         <div className="contact--find-us pt-5">
-                            <span className="bold-heading">Find Us</span>
+                            <span className="bold-heading contact--find-text">Find Us</span>
                             <div className="contact--address mt-4">
                                 <h1>Address</h1>
                                 <span className="lead">Samtej Industries LLP SLK Hydrotechnologies,<br /> 69/1, Shripati complex Vagdaon-Dhayari TEL EXCH. BLDG.,<br/> Vagdaon (BK), Pune - 411041<br />Landmark : Next to Axis Bank or Dhareshwar Mangal Karyalaya, Dhayari Phata
@@ -88,7 +126,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <Suspense fallback={<h1>Still Loading…</h1>}>
+                    <Suspense fallback={<h1 className="text-white">Still Loading…</h1>}>
                         <Map />
                     </Suspense>
                 </div>

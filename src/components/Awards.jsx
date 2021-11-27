@@ -24,7 +24,7 @@ const Awards = () => {
                             })}
                         </div>
                         <div className="awards-img col-lg-6 pt-5">
-                            <img className="img-fluid" max-width="100%" height="auto" src={award_pic} alt="" loading="lazy"/>
+                            <img className="img-fluid" width="100%" height="auto" src={award_pic} alt="" loading="lazy"/>
                         </div>
                     </div>
                 </div>

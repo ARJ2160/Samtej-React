@@ -49,6 +49,11 @@ html{
     font-weight: 700;
     pointer-events: none;
     height: 40vh;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-image: url("https://media2.giphy.com/media/dAWZiSMbMvObDWP3aA/200w.gif?cid=82a1493byp37003a7qbmajj1l5tg7mcliwmw1twdt960cw2l&rid=200w.gif&ct=g");
 }
 .hero--bottom-text > h4{
     padding-bottom: 10px;
@@ -191,7 +196,7 @@ html{
     border-bottom: 2px solid #adadad;
     margin: 30px 0;
 }
-.txt-field input{
+.txt-field {
     color: #fff !important;
     width: 80%;
     padding: 0 5px;
@@ -202,6 +207,7 @@ html{
     outline: none;
 }
 .submit-btn{
+    display: block;
     background-color: var(--btncolor) !important;
     color: #232946 !important;
     transition: var(--transition);
@@ -215,6 +221,20 @@ html{
 .contact--bottom-container{
     display: flex;
     justify-content: space-between;
+}
+.form-errors{
+    color: red;
+}
+.message-text{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.contact--text, .contact--find-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    background-image: url("https://media2.giphy.com/media/dAWZiSMbMvObDWP3aA/200w.gif?cid=82a1493byp37003a7qbmajj1l5tg7mcliwmw1twdt960cw2l&rid=200w.gif&ct=g");
 }
 @media (max-width: 850px){
     .flex-container{
@@ -233,6 +253,7 @@ html{
 @media(max-width: 990px){
     .contact--map{
         height: 50vh !important;
+        padding-bottom: 50px;
     }
 }
 /*<------------------------------------- Footer CSS ------------------------------------->*/

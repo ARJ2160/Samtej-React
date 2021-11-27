@@ -3,7 +3,7 @@ import "../index.css"
 import BingMapsReact from "bingmaps-react";
 
 const Map = () => {
-
+    
     return (
         <div className="col-lg-6 p-4 mt-3 contact--map">
             <BingMapsReact
