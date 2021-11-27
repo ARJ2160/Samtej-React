@@ -18,7 +18,6 @@ const Contact = () => {
     //Send Message to Google Form
     const scriptURL = 'https://script.google.com/macros/s/AKfycbz0uimyevS_X45Ky0ieFwixxh_EAcxCNv0yAz0aZx43OJlea0a0HBJYxJ5DT2rh5J89/exec'
     const form = document.forms['google-sheet']
-    let submitMessage = ""
 
     const handleChange = e => {
         const { name, value } = e.target
