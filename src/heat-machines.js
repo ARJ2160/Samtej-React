@@ -10,7 +10,7 @@ const heat_machines = [
     {
         "id": "1",
         "img": single_tray_A5050HP,
-        "card_title": "Single Tray Water Cooled Hand Pump Hydraulic System",
+        "card_title": "Single Tray Air & Water Cooled Hydraulic System (Hand Pump operated)",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Manual 2 stage pressure system.",
         "model": " A5050HP",
         "power": "1.2 KW 230 V AC Single Phase",
@@ -23,7 +23,7 @@ const heat_machines = [
     {
         "id": "2",
         "img": single_tray_A4101HP,
-        "card_title" : "Single Tray Air & Water Cooled Hydraulic System",
+        "card_title" : "Single Tray Air & Water Cooled Hydraulic System (Hand Pump operated)",
         "card_body": " Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Manual 2 stage pressure system.",
         "model": " A4101HP",
         "power": "2.2 /3.5 KW 230 V AC Single Phase",
@@ -36,7 +36,7 @@ const heat_machines = [
     {
         "id": "3",
         "img": single_tray_A4101A,
-        "card_title" : "Single Tray Air & Water Cooled Hydraulic System",
+        "card_title" : "Single Tray Air & Water Cooled Hydraulic System (Fully Automatic)",
         "card_body": " Microcontroller Based solid state electronics. 3 stage full Automatic Hydraulic pressure system. Easy settings with User friendly operation along with 4 Paper channel programming",
         "model": " A4101A",
         "power": "2.4/4.5 KW 230 V AC Single Phase",
@@ -49,7 +49,7 @@ const heat_machines = [
     {
         "id": "4",
         "img": double_tray_A4201HP,
-        "card_title" : "Double Tray Air & Water Cooled Hydraulic System",
+        "card_title" : "Double Tray Air & Water Cooled Hydraulic System (Hand Pump operated)",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Manual 2 stage pressure system.",
         "model": " A4201HP",
         "power": "3.6 KW 230 V AC Single Phase",
@@ -62,7 +62,7 @@ const heat_machines = [
     {
         "id": "5",
         "img": double_tray_A3480A,
-        "card_title" : "Double Tray Water Cooled Hydraulic System",
+        "card_title" : "Double Tray Water Cooled Hydraulic System (Hand Pump operated)",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics.",
         "model": " A3480HP",
         "power": "5.5 KW 230 V AC Single/Three Phase",
@@ -75,7 +75,7 @@ const heat_machines = [
     {
         "id": "6",
         "img": double_tray_A3480A,
-        "card_title" : "Double Tray Water Cooled Hydraulic System",
+        "card_title" : "Double Tray Water Cooled Hydraulic System (Fully Automatic)",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Automatic 3 stage pressure system.",
         "model": " A3480A",
         "power": "9.7 KW 230 V AC Three Phase",
@@ -88,7 +88,7 @@ const heat_machines = [
     {
         "id": "7",
         "img": single_tray_A3250A,
-        "card_title" : "Single Tray Water Cooled Hydraulic System",
+        "card_title" : "Single Tray Water Cooled Hydraulic System (Fully Automatic)",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Automatic 3 stage pressure system.",
         "model": "A3250A",
         "power": "6.5 KW 230 V AC Three Phase",
@@ -101,7 +101,7 @@ const heat_machines = [
     {
         "id": "8",
         "img": triple_tray_A3750A,
-        "card_title" : "Triple Tray Water Cooled Hydraulic System",
+        "card_title" : "Triple Tray Water Cooled Hydraulic System (Fully Automatic)",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics. Automatic 3 stage pressure system.",
         "model": "A3750A",
         "power": "12.5 KW 230 V AC Three Phase",

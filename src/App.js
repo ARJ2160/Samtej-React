@@ -42,8 +42,8 @@ function App() {
                 <Route exact path="/">
                     <Navbar />
                     <Hero />
-                    <Services />
                     <Awards />
+                    <Services />
                     <Contact />
                     <Footer />
                 </Route>
