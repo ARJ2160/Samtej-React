@@ -5,10 +5,10 @@ import "../../index.css"
 function ShirtMachines() {
     return (
         <section id="cardmachines">
-            <div className="row product-section side-padding mb-4 pt-4 me-0 justify-content-center general-padding">
+            <div className="row product-section side-padding pt-4 me-0 justify-content-center general-padding">
                 <h1 className="text-center product-heading pt-5 pb-3">Shirt Printing Machines</h1>
-                {shirt_prints.map(shirts => {
-                    const { id, img, card_title, dimensions, power, plate_size, batch_time } = shirts
+                {shirt_prints.map(prod => {
+                    const { id, img, card_title, dimensions, power, plate_size, batch_time } = prod
                     return (
                         <div className="card align-items-center m-2 pe-0 ps-0" style={{ width: '18rem' }} key={id}>
                             <img src={img} className="card-img-top" alt="Shirt Machines" />

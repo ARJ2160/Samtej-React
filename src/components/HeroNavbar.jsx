@@ -7,7 +7,7 @@ import "../index.css"
 const HeroNavbar = () => {
 
     return (
-        <Navbar className="main--navigation" expand="lg" style={{ backgroundColor: "#b8c1ec", color: "#000000"}}>
+        <Navbar className="main--navigation" expand="lg" style={{ backgroundColor: "#b8c1ec", color: "#000000", fontWeight: "600" }}>
             <Container>
                 <Navbar.Brand href="/"><img src={company_logo} style={{width: "50px", height: "50px"}} alt="brand-logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -15,7 +15,7 @@ const HeroNavbar = () => {
                     <Nav className="ms-auto">
                         <NavDropdown title="Products" className="me-5 nav-dropdown" id="basic-nav-dropdown" style={{ color: "#000000" }}>
                             <NavDropdown.Item href="/shirtmachines">Shirt Printing Machine</NavDropdown.Item>
-                            <NavDropdown.Item href="/cardmachines">Card Manufacturing Machine</NavDropdown.Item>
+                            <NavDropdown.Item href="/cardmachines">Card Cutter Machines</NavDropdown.Item>
                             <NavDropdown.Item href="/heatmachines">Heat Fusing Machines</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/#about" className="me-5" style={{ color: "#000000" }}>About</Nav.Link>

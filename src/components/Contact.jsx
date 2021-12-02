@@ -1,8 +1,8 @@
-import React, { useState, Suspense, lazy } from 'react'
+import React, { useState } from 'react'
 import "../index.css"
-import { FaFacebook, FaLinkedin, FaShoppingCart } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaPhoneAlt, FaShoppingCart } from 'react-icons/fa';
 
-const Map = lazy(() => import('./Map'));
+// const Map = lazy(() => import('./Map'));
 
 const Contact = () => {
 
@@ -25,6 +25,7 @@ const Contact = () => {
     }
 
     const validate = (e, formValues) => {
+        
         e.preventDefault()
         const errors = {}
         const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -59,7 +60,7 @@ const Contact = () => {
                 {Object.keys(formErrors).length === 0 && isSubmit ? <div className="text-white message-text">Message Sent Successfully</div> : "" }
                 <span className="contact--text bold-heading">Contact Us</span>
                 <div className="row me-0">
-                    <div className="form col-lg-6 p-3">
+                    <div className="form p-3">
                         <form method="post" className="flex-column" name="google-sheet">
                             <input
                                 className="txt-field"
@@ -92,7 +93,7 @@ const Contact = () => {
                             <span className="bold-heading contact--find-text">Find Us</span>
                             <div className="contact--address mt-4">
                                 <h1>Address</h1>
-                                <span className="lead">Samtej Industries LLP SLK Hydrotechnologies,<br /> 69/1, Shripati complex Vagdaon-Dhayari TEL EXCH. BLDG.,<br/> Vagdaon (BK), Pune - 411041<br />Landmark : Next to Axis Bank or Dhareshwar Mangal Karyalaya, Dhayari Phata
+                                <span className="lead">Samtej Industries LLP,<br /> 69/1, Shripati complex Vagdaon-Dhayari TEL EXCH. BLDG.,<br/> Vagdaon (BK), Pune - 411041<br />Landmark : Next to Axis Bank or Dhareshwar Mangal Karyalaya, Dhayari Phata
                                 </span>
                             </div>
                         </div>
@@ -100,13 +101,28 @@ const Contact = () => {
                             <div className="contact--social-media pt-5">
                                 <h1>Social Media</h1>
                                 <div className="footer--social--icons d-flex">
-                                    <a href="https://www.facebook.com/SanjayJoshiSLK/" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.facebook.com/SanjayJoshiSLK/"
+                                        style={{ color: "#ffffff" }}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                         <FaFacebook className="img-fluid me-5 mt-4" style={{ width: "40px", height: "40px" }}/>
                                     </a>
-                                    <a href="https://www.linkedin.com/in/sanjay-joshi-339ab126?fromQR=1" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.linkedin.com/in/sanjay-joshi-339ab126?fromQR=1"
+                                        style={{ color: "#ffffff" }}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                         <FaLinkedin className="img-fluid me-5 mt-4" style={{ width: "40px", height: "40px" }}/>
                                     </a>
-                                    <a href="https://www.indiamart.com/samtej-industries/" style={{color: "#ffffff"}} target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.indiamart.com/samtej-industries/"
+                                        style={{ color: "#ffffff" }}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                         <FaShoppingCart className="img-fluid me-5 mt-4" style={{ width: "40px", height: "40px" }}/>
                                     </a>
                                 </div>
@@ -114,15 +130,16 @@ const Contact = () => {
                             <div className="contact--number pt-5">
                                 <h1>Contact Details</h1>
                                 <div className="contact--mail-nos mt-3">
-                                    <span className="lead" style={{ fontSize: '15px' }}>samtejindustriesllp@gmail.com<br/>9822214198<br/>8796666160</span>
-                                    <span></span>
+                                    <span className="lead" style={{ fontSize: '16px' }}>
+                                        samtejindustriesllp@gmail.com<br/>9822214198<br/>8796666160
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <Suspense fallback={<h1 className="text-white">Still Loading…</h1>}>
+                    {/* <Suspense fallback={<h1 className="text-white">Still Loading…</h1>}>
                         <Map />
-                    </Suspense>
+                    </Suspense> */}
                 </div>
             </div>
         </section>

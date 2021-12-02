@@ -1,6 +1,7 @@
 import React, { useState, useEffect  } from 'react'
 import "../index.css"
 import card from "../assets/hero_card.svg"
+import { Dropdown } from 'react-bootstrap';
 
 const Hero = () => {
 
@@ -67,8 +68,26 @@ const Hero = () => {
                         <h4>Our goal is to provide Smart Card solutions.</h4>
                         <h4>We solely manufacture fully automated hydraulic fusing machines, motorised card cutters and T-shirt printing machines.</h4>
                         <h4>Our aim is to deliver quality products with maximum customer satisfaction.</h4>
-                        <div className="hero--about-button">
-                            <a href="#about"><button className=" about-button mt-3" rel="noreferrer" style={{ float: 'right' }}>About Us</button></a>
+                        <div className="hero--bottom--buttons align-items-center">
+                            <div className="dropdown-button">
+                                <Dropdown>
+                                    <Dropdown.Toggle id="dropdown-basic" className="hero--button hero--dropdown--button">
+                                        Our Products
+                                    </Dropdown.Toggle>
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item href="/shirtmachines">Shirt Printing Machine</Dropdown.Item>
+                                        <Dropdown.Item href="/cardmachines">Card Cutter Machines</Dropdown.Item>
+                                        <Dropdown.Item href="/heatmachines">Heat Fusing Machines</Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </div>
+                            <div className="about-button">
+                                <a href="#about">
+                                    <button className="hero--button hero--about-button" rel="noreferrer">
+                                        About Us
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
