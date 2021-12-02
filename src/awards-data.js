@@ -2,7 +2,7 @@ const awards = [
     {
         "id": "1",
         "title": "Recognition from the MCCIA",
-        "desc": "We have been awarded Shri Hari Malini Joshi Award for the most innovative product and design of the year 2017 by Maratha Chambers Of Commerce Industries and Agriculture (MCCIA)."
+        "desc": "We have been awarded Shri Hari Malini Joshi Award for the most innovative product and design of the year 2017 by Mahratta Chambers Of Commerce Industries and Agriculture (MCCIA)."
     },
     {
         "id": "2",
