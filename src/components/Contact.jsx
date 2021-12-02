@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../index.css"
-import { FaFacebook, FaLinkedin, FaPhoneAlt, FaShoppingCart } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaShoppingCart } from 'react-icons/fa';
 
 // const Map = lazy(() => import('./Map'));
 
