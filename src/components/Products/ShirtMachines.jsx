@@ -8,7 +8,7 @@ const ShirtMachines = () => {
         <section id="cardmachines">
             <GetInTouch />
             <div className="row product-section side-padding pt-4 me-0 justify-content-center general-padding">
-                <h1 className="text-center product-heading pt-5 pb-3">Shirt Printing Machines</h1>
+                <h1 className="text-center product-heading pt-5 pb-3">T-Shirt Printing Machines</h1>
                 {shirt_prints.map(prod => {
                     const { id, img, card_title, dimensions, power, plate_size, batch_time } = prod
                     return (
@@ -20,7 +20,7 @@ const ShirtMachines = () => {
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item"><strong>Dimensions:  </strong>{dimensions}</li>
                                 <li className="list-group-item"><strong>Power:  </strong>{power}</li>
-                                <li className="list-group-item"><strong>Plate Size:  </strong>{plate_size}</li>
+                                <li className="list-group-item"><strong>Plate Size:  </strong>{plate_size}<br />  Customisable as per requirement.</li>
                                 <li className="list-group-item"><strong>Batch Size:  </strong>{batch_time}</li>
                             </ul>
                         </div>

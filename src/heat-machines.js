@@ -5,6 +5,7 @@ import double_tray_A4201HP from "./assets/products/double_tray_A4201HP.webp"
 import double_tray_A3480A from "./assets/products/double_tray_A3480A.webp"
 import single_tray_A3250A from "./assets/products/single_tray_A3250A.webp"
 import triple_tray_A3750A from "./assets/products/triple_tray_A3750A.webp"
+import double_tray_A3280HP from "./assets/products/double_tray_A3280HP.webp"
 
 const heat_machines = [
     {
@@ -61,15 +62,15 @@ const heat_machines = [
     },
     {
         "id": "5",
-        "img": double_tray_A3480A,
+        "img": double_tray_A3280HP,
         "card_title" : "Double Tray Water Cooled Hydraulic System (Hand Pump operated)",
         "card_body": "Easy settings with User friendly operation along with 4 Paper channel programming. Microcontroller Based solid state electronics.",
-        "model": " A3480HP",
+        "model": "A3280HP",
         "power": "5.5 KW 230 V AC Single/Three Phase",
         "dimensions": "650 x 750 x 1250 mm",
         "plate_size": "330 x 483 mm",
         "media": "PVC, Teslin, PET- G",
-        "capacity": "480 cards per batch",
+        "capacity": "280 cards per batch",
         "batch_time" : "30 mins approx"
     },
     {

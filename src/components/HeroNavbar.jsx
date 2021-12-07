@@ -14,7 +14,7 @@ const HeroNavbar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <NavDropdown title="Products" className="me-5 nav-dropdown" id="basic-nav-dropdown" style={{ color: "#000000" }}>
-                            <NavDropdown.Item href="/shirtmachines">Shirt Printing Machine</NavDropdown.Item>
+                            <NavDropdown.Item href="/shirtmachines">T-Shirt Printing Machine</NavDropdown.Item>
                             <NavDropdown.Item href="/cardmachines">Card Cutter Machines</NavDropdown.Item>
                             <NavDropdown.Item href="/heatmachines">Heat Fusing Machines</NavDropdown.Item>
                         </NavDropdown>

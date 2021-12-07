@@ -16,7 +16,8 @@ const Contact = () => {
     const [isSubmit, setIsSubmit] = useState(false)
 
     //Send Message to Google Form
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz0uimyevS_X45Ky0ieFwixxh_EAcxCNv0yAz0aZx43OJlea0a0HBJYxJ5DT2rh5J89/exec'
+    // const scriptURL = 'https://script.google.com/macros/s/AKfycbz0uimyevS_X45Ky0ieFwixxh_EAcxCNv0yAz0aZx43OJlea0a0HBJYxJ5DT2rh5J89/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwSvKDcmiZnSIIf-s4wQN48eGdZFfx9X9NEnLqwkbmoUxjivdbi5HEs80AcR5mBy1l0qA/exec'
     const form = document.forms['google-sheet']
 
     const handleChange = e => {
