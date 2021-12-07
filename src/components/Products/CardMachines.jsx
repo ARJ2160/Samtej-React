@@ -1,18 +1,12 @@
 import React from 'react'
-import { FaPhoneAlt } from 'react-icons/fa'
 import card_products from "../../card-product"
 import "../../index.css"
+import GetInTouch from '../GetInTouch'
 
-function CardMachines() {
+const CardMachines = () => {
     return (
         <section id="cardmachines">
-            <div className="d-flex justify-content-center align-items-center product-modal p-3">
-                {/* <span className="text-white">Check Out our full range of products at IndiaMart.com</span> */}
-                <button className="btn text-white">
-                    <FaPhoneAlt className="me-4" style={{ width: "25px", height: "25px", color: "#fff" }}/>
-                    Contact us Now
-                </button>
-            </div>
+            <GetInTouch />
             <div className="row product-section side-padding justify-content-center pt-4 me-0 general-padding">
                 <h1 className="text-center product-heading pt-5 pb-3">Card Cutter Machines</h1>
                 {card_products.map(prod => {

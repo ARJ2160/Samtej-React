@@ -1,10 +1,12 @@
 import React from 'react'
 import shirt_prints from "../../shirt-products"
 import "../../index.css"
+import GetInTouch from '../GetInTouch'
 
-function ShirtMachines() {
+const ShirtMachines = () => {
     return (
         <section id="cardmachines">
+            <GetInTouch />
             <div className="row product-section side-padding pt-4 me-0 justify-content-center general-padding">
                 <h1 className="text-center product-heading pt-5 pb-3">Shirt Printing Machines</h1>
                 {shirt_prints.map(prod => {

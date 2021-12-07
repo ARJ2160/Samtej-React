@@ -1,10 +1,12 @@
 import React from 'react'
 import heat_machines from "../../heat-machines"
 import "../../index.css"
+import GetInTouch from '../GetInTouch'
 
-function HeatMachines() {
+const HeatMachines = () => {
     return (
         <section id="cardmachines">
+            <GetInTouch />
             <div className="row product-section side-padding justify-content-center  pt-4 me-0 general-padding">
                 <h1 className="text-center product-heading pt-5 pb-3">Heat Fusing Machines</h1>
                 {heat_machines.map(prod => {

@@ -83,10 +83,10 @@ const Contact = () => {
                             />
                             <p className="form-errors">{formErrors.Message}</p>
                             <button
-                                onClick={(e) => { setFormErrors(validate(e, formValues)) }}
+                                onClick={e => { setFormErrors(validate(e, formValues)) }}
                                 type="submit"
                                 className="submit-btn mt-3"
-                            >Submit</button>
+                            >Send Mail</button>
                         </form>
 
                         <div className="contact--find-us pt-5">

@@ -283,6 +283,7 @@ html{
     margin-bottom: 50px;
 }
 .product-modal{
-    height: 100px;
+    height: auto;
+    padding: 20px;
     background-color: #232946
 }
