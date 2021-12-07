@@ -77,7 +77,7 @@ const Hero = () => {
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="/shirtmachines">T-Shirt Printing Machine</Dropdown.Item>
                                         <Dropdown.Item href="/cardmachines">Card Cutter Machines</Dropdown.Item>
-                                        <Dropdown.Item href="/heatmachines">Heat Fusing Machines</Dropdown.Item>
+                                        <Dropdown.Item href="/heatmachines">Heat Press Fusing Machines</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </div>

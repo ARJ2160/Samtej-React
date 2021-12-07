@@ -16,7 +16,7 @@ const HeroNavbar = () => {
                         <NavDropdown title="Products" className="me-5 nav-dropdown" id="basic-nav-dropdown" style={{ color: "#000000" }}>
                             <NavDropdown.Item href="/shirtmachines">T-Shirt Printing Machine</NavDropdown.Item>
                             <NavDropdown.Item href="/cardmachines">Card Cutter Machines</NavDropdown.Item>
-                            <NavDropdown.Item href="/heatmachines">Heat Fusing Machines</NavDropdown.Item>
+                            <NavDropdown.Item href="/heatmachines">Heat Press Fusing Machines</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/#about" className="me-5" style={{ color: "#000000" }}>About</Nav.Link>
                         <Nav.Link href="/#awards" className="me-5" style={{ color: "#000000" }}>Awards</Nav.Link>

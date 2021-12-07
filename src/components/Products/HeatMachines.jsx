@@ -8,7 +8,7 @@ const HeatMachines = () => {
         <section id="cardmachines">
             <GetInTouch />
             <div className="row product-section side-padding justify-content-center  pt-4 me-0 general-padding">
-                <h1 className="text-center product-heading pt-5 pb-3">Heat Fusing Machines</h1>
+                <h1 className="text-center product-heading pt-5 pb-3">Heat Press Fusing Machines</h1>
                 {heat_machines.map(prod => {
                     const { id, img, card_title, card_body, model, plate_size , power, capacity } = prod
                     return (
