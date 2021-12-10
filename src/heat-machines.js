@@ -96,7 +96,7 @@ const heat_machines = [
         "dimensions": "650 x 750 x 1250 mm",
         "plate_size": "330 x 483 mm",
         "media": "PVC, Teslin, PET- G",
-        "capacity": "240/250 per batch",
+        "capacity": "240/250 cards per batch",
         "batch_time" : "30 mins approx"
     },
     {
@@ -109,7 +109,7 @@ const heat_machines = [
         "dimensions": "650 x 750 x 1250 mm",
         "plate_size": "330 x 483 mm",
         "media": "PVC, Teslin, PET- G",
-        "capacity": "720/750 per batch",
+        "capacity": "720/750 cards per batch",
         "batch_time" : "30 mins approx"
     }
 ]
