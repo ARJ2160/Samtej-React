@@ -20,7 +20,7 @@ const ShirtMachines = () => {
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item"><strong>Dimensions:  </strong>{dimensions}</li>
                                 <li className="list-group-item"><strong>Power:  </strong>{power}</li>
-                                <li className="list-group-item"><strong>Plate Size:  </strong>{plate_size}<br />  Customisable as per requirement.</li>
+                                <li className="list-group-item"><strong>Plate Size:  </strong>{plate_size}<br /> <strong>Customizable as per requirement.</strong></li>
                                 <li className="list-group-item"><strong>Batch Size:  </strong>{batch_time}</li>
                             </ul>
                         </div>
