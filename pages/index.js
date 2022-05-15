@@ -31,7 +31,6 @@ export default function Home() {
           content='https://ik.imagekit.io/36athv2v82c8/brand_logo_9GaKgVjDxY.webp?updatedAt=1635853812981'
         />
         <meta property='og:url' content='https://samtejllp.com/' />
-        <link rel='canonical' href='https://samtejllp.com/' />
         <link
           rel='shortcut icon'
           href='https://ik.imagekit.io/36athv2v82c8/logo_67NOY6puGB.webp?updatedAt=1638894652358'
