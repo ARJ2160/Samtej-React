@@ -31,21 +31,12 @@ export default function Home() {
           content='https://ik.imagekit.io/36athv2v82c8/brand_logo_9GaKgVjDxY.webp?updatedAt=1635853812981'
         />
         <meta property='og:url' content='https://samtejllp.com/' />
-
-        <meta httpEquiv='x-dns-prefetch-control' content='on' />
-        <meta httpEquiv='x-xss-protection' content='1; mode=block' />
-        <meta httpEquiv='x-content-type-options' content='nosniff' />
-        <meta httpEquiv='referrer' content='no-referrer' />
-        <meta httpEquiv='cache-control' content='no-cache' />
-        <meta httpEquiv='pragma' content='no-cache' />
-        <meta httpEquiv='expires' content='0' />
-
+        <link rel='canonical' href='https://samtejllp.com/' />
         <link
           rel='shortcut icon'
           href='https://ik.imagekit.io/36athv2v82c8/logo_67NOY6puGB.webp?updatedAt=1638894652358'
           type='image/x-icon'
         />
-
         <title>Samtej Industries</title>
       </Head>
       <Navbar />
