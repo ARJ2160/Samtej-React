@@ -42,21 +42,22 @@ const HeroNavbar = () => {
               <Link href='/cardmachines'>Card Cutter Machines</Link>
               <Link href='/heatmachines'>Heat Press Fusing Machines</Link>
             </NavDropdown>
-            <Nav.Link
-              href='/#about'
-              className='me-2'
-              style={{ color: '#000000' }}>
-              About
-            </Nav.Link>
-            <Nav.Link
-              href='/#awards'
-              className='me-2'
-              style={{ color: '#000000' }}>
-              Awards
-            </Nav.Link>
-            <Nav.Link href='/#contact' style={{ color: '#000000' }}>
-              Contact
-            </Nav.Link>
+            <div className='nav-link'>
+              <Link href='/#about' className='me-2'>
+                About
+              </Link>
+            </div>
+            <div className='nav-link'>
+              <Link
+                href='/#awards'
+                className='me-2'
+                style={{ color: '#000000' }}>
+                Awards
+              </Link>
+            </div>
+            <div className='nav-link'>
+              <Link href='/#contact'>Contact</Link>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>

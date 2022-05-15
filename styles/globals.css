@@ -37,6 +37,13 @@ html {
 }
 /*<------------------------------------- Navbar CSS ------------------------------------->*/
 .nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+.nav-link a {
+  text-decoration: none;
   color: #000 !important;
 }
 .navbar-logo {
@@ -44,12 +51,10 @@ html {
   max-height: 50px !important;
   cursor: pointer;
 }
+#basic-nav-dropdown {
+  color: #000;
+}
 .dropdown-menu {
-  /* padding-top: 10px !important;
-  padding-left: 20px !important;
-  width: fit-content;
-  min-width: 180px;
-  text-align: left; */
   position: absolute;
   z-index: 1000;
   display: none;
@@ -62,7 +67,7 @@ html {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0);
   border-radius: 0.25rem;
 }
 .dropdown-menu a {
