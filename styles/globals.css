@@ -46,7 +46,7 @@ html {
 }
 .dropdown-menu {
   padding-top: 10px !important;
-  padding-left: 30px !important;
+  padding-left: 20px !important;
 }
 .dropdown-menu a {
   color: #000 !important;
@@ -55,7 +55,8 @@ html {
   font-weight: 400;
 }
 .dropdown-menu div {
-  width: 300px;
+  width: fit-content;
+  min-width: 200px;
   text-align: left;
 }
 /*<------------------------------------- Hero CSS ------------------------------------->*/
