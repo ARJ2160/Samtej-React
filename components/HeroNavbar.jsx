@@ -35,28 +35,22 @@ const HeroNavbar = () => {
           <Nav className='navbar-dropdown ms-auto'>
             <NavDropdown
               title='Products'
-              className='me-5 nav-dropdown'
+              className='me-2 nav-dropdown'
               id='basic-nav-dropdown'
               style={{ color: '#000000 !important' }}>
-              <div>
-                <Link href='/shirtmachines'>T-Shirt Printing Machine</Link>
-              </div>
-              <div>
-                <Link href='/cardmachines'>Card Cutter Machines</Link>
-              </div>
-              <div>
-                <Link href='/heatmachines'>Heat Press Fusing Machines</Link>
-              </div>
+              <Link href='/shirtmachines'>T-Shirt Printing Machine</Link>
+              <Link href='/cardmachines'>Card Cutter Machines</Link>
+              <Link href='/heatmachines'>Heat Press Fusing Machines</Link>
             </NavDropdown>
             <Nav.Link
               href='/#about'
-              className='me-5'
+              className='me-2'
               style={{ color: '#000000' }}>
               About
             </Nav.Link>
             <Nav.Link
               href='/#awards'
-              className='me-5'
+              className='me-2'
               style={{ color: '#000000' }}>
               Awards
             </Nav.Link>

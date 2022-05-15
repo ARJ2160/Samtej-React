@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { Dropdown } from 'react-bootstrap';
 import Image from 'next/image';
+import Link from 'next/link';
 import card from '../assets/hero_card.svg';
 
 const Hero = () => {
@@ -93,8 +94,13 @@ const Hero = () => {
                     className='hero--button hero--dropdown--button'>
                     Our Products
                   </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href='/shirtmachines'>
+                  <Dropdown.Menu className='hero-dropdown'>
+                    <Link href='/shirtmachines'>T-Shirt Printing Machine</Link>
+                    <Link href='/cardmachines'>Card Cutter Machines</Link>
+                    <Link href='/heatmachines'>
+                      Heat Press Fusing Machines
+                    </Link>
+                    {/* <Dropdown.Item href='/shirtmachines'>
                       T-Shirt Printing Machine
                     </Dropdown.Item>
                     <Dropdown.Item href='/cardmachines'>
@@ -102,7 +108,7 @@ const Hero = () => {
                     </Dropdown.Item>
                     <Dropdown.Item href='/heatmachines'>
                       Heat Press Fusing Machines
-                    </Dropdown.Item>
+                    </Dropdown.Item> */}
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
