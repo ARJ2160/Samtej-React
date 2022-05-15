@@ -1,16 +1,304 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
+/*<------------------------------------- Index CSS ------------------------------------->*/
 * {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif !important;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  --transition: all 0.2s linear;
+  --btncolor: #eebbc3;
+  --main--bg-color: #232946;
+  --main-text-color: #b8c1ec;
+  --services-bg-color: #232946;
+  --services-text-color: #b8c1ec;
+  --awards-bg-color: #b8c1ec;
+  --awards-text-color: #232946;
+  --contact-bg-color: #0d0d0d;
+}
+html {
+  position: relative;
+  min-height: 100vh;
+}
+.side-padding {
+  padding: 30px;
+}
+.general--padding {
+  padding: 30px;
+}
+@media (max-width: 500px) {
+  .side-padding {
+    padding: 10px;
+  }
+  .general--padding {
+    padding: 10px;
+  }
+}
+/*<------------------------------------- Navbar CSS ------------------------------------->*/
+.nav-link {
+  color: #000 !important;
+}
+.navbar-logo {
+  min-width: 50px !important;
+  max-height: 50px !important;
+  cursor: pointer;
+}
+.dropdown-menu {
+  padding-top: 10px !important;
+  padding-left: 30px !important;
+}
+.dropdown-menu a {
+  color: #000 !important;
+  text-decoration: none;
+  padding: 10px 0 !important;
+  font-weight: 400;
+}
+.dropdown-menu div {
+  width: 300px;
+  text-align: left;
+}
+/*<------------------------------------- Hero CSS ------------------------------------->*/
+.hero--section {
+  background-color: var(--main--bg-color);
+  color: var(--main-text-color);
+}
+.hero--header-text {
+  font-size: 4vw;
+  line-height: 1.5;
+  font-weight: 700;
+  pointer-events: none;
+  height: 40vh;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-image: url('https://media2.giphy.com/media/dAWZiSMbMvObDWP3aA/200w.gif?cid=82a1493byp37003a7qbmajj1l5tg7mcliwmw1twdt960cw2l&rid=200w.gif&ct=g');
+}
+.hero--bottom-text > h4 {
+  padding-bottom: 10px;
+}
+.hero--bottom--buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.hero--button {
+  transition: var(--transition) !important;
+  padding: 1rem 1rem !important;
+  margin: 0.7rem !important;
+  border-radius: 3px !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  border: none !important;
+}
+.hero--about-button {
+  background-color: var(--btncolor) !important;
+  color: #000000 !important;
+}
+.hero--dropdown--button {
+  background-color: #b8c1ec !important;
+  color: #000000 !important;
+}
+.hero--section-card > img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1280px) {
+  .hero--header-text {
+    height: 28vh;
+  }
+}
+@media (max-width: 990px) {
+  .hero--header-text {
+    text-align: center;
+    height: 20vh;
+  }
+  .hero--bottom-text > h4 {
+    text-align: center !important;
+  }
+  .hero--bottom--buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero--section-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero--section-card > img {
+    width: 60%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .hero--bottom--buttons {
+    flex-direction: column;
+  }
+}
+@media (max-width: 930px) {
+  .hero--header-text {
+    font-size: 1.75rem;
+  }
+  .hero--bottom-text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 300px) {
+  .hero--header-text {
+    height: 100px;
+    font-size: 1.2rem;
+  }
+}
+/*<------------------------------------- Services CSS ------------------------------------->*/
+.services {
+  background-color: var(--services-bg-color);
+  padding-top: 3rem;
+  color: var(--services-text-color);
+}
+.services h1 {
+  line-height: 1.3;
+  font-weight: 700;
+}
+.services-list ul li {
+  list-style: disc;
+  padding-top: 20px;
+  font-weight: 400;
+}
+/*<------------------------------------- Awards CSS ------------------------------------->*/
+.awards {
+  background-color: var(--awards-bg-color);
+  padding-top: 3rem;
+}
+.awards h1 {
+  line-height: 1.3;
+  font-weight: 700;
+  color: var(--awards-text-color);
+}
+.award--boxes {
+  padding-top: 2.5rem;
+}
+.outer-award-box {
+  width: 50vw;
+  position: relative;
+  z-index: 2;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: -1px 6px 13px 0px rgba(255, 255, 255, 0.44);
+  -webkit-box-shadow: -1px 6px 13px 0px rgba(255, 255, 255, 0.44);
+  -moz-box-shadow: -1px 6px 13px 0px rgba(255, 255, 255, 0.44);
+}
+.card-title {
+  font-weight: 700;
+}
+@media (max-width: 990px) {
+  .award--boxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .outer-award-box {
+    width: 70vw;
+  }
+}
+@media (max-width: 510px) {
+  .awards--section {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+/*<------------------------------------- Contact CSS ------------------------------------->*/
+#contact {
+  background-color: var(--contact-bg-color);
+  padding-top: 3rem;
+}
+.bold-heading {
+  font-size: 55.2px;
+  font-weight: 700;
+}
+.form .txt-field {
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt-field {
+  color: #fff !important;
+  width: 80%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  outline: none;
+}
+.submit-btn {
+  display: block;
+  background-color: var(--awards-bg-color) !important;
+  color: black !important;
+  transition: var(--transition);
+  padding: 1.2rem 2rem;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+.contact--bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+.form-errors {
+  color: red;
+}
+.message-text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.contact--text,
+.contact--find-text {
+  color: #3399ff;
+}
+@media (max-width: 850px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 680px) {
+  .contact--bottom-container {
+    flex-direction: column;
+  }
+  .form {
+    padding-right: 0 !important;
+  }
+}
+/*<------------------------------------- Mapbox CSS ------------------------------------->*/
+@media (max-width: 990px) {
+  .contact--map {
+    height: 50vh !important;
+    padding-bottom: 50px;
+  }
+}
+/*<------------------------------------- Footer CSS ------------------------------------->*/
+.bottom--footer {
+  background-color: #232946;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+/*<------------------------------------- Product Section CSS ------------------------------------->*/
+.product-heading {
+  line-height: 1.3;
+  font-weight: 700;
+}
+.product-section {
+  margin-bottom: 50px;
+}
+.product-modal {
+  height: auto;
+  padding: 20px;
+  background-color: #232946;
 }
