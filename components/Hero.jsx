@@ -75,7 +75,7 @@ const Hero = () => {
             data-aos='fade-up'
             className='hero--bottom-text text-end lead pt-5 col-lg-6'
             style={{ fontSize: '1.65rem' }}>
-            <h4>We deliver quality products at affordable prices.</h4>
+            <h3>We deliver quality products at affordable prices.</h3>
             <h4>Our goal is to provide Smart Card solutions.</h4>
             <h4>
               We solely manufacture fully automated hydraulic fusing machines,
