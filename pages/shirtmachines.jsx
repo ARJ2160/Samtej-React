@@ -1,5 +1,6 @@
 import Footer from '../components/Footer';
 import GetInTouch from '../components/GetInTouch';
+import Head from 'next/head';
 import HeroNavbar from '../components/HeroNavbar';
 import Image from 'next/image';
 import React from 'react';
@@ -8,11 +9,14 @@ import shirt_prints from '../components/shirt-products';
 const ShirtMachines = () => {
   return (
     <>
+      <Head>
+        <title>Samtej Industries</title>
+      </Head>
       <HeroNavbar />
-      <section id='cardmachines'>
+      <section id="cardmachines">
         <GetInTouch />
-        <div className='row product-section side-padding pt-4 me-0 justify-content-center general-padding'>
-          <h1 className='text-center product-heading pt-5 pb-3'>
+        <div className="row product-section side-padding pt-4 me-0 justify-content-center general-padding">
+          <h1 className="text-center product-heading pt-5 pb-3">
             T-Shirt Printing Machines
           </h1>
           {shirt_prints.map((prod) => {
@@ -27,32 +31,32 @@ const ShirtMachines = () => {
             } = prod;
             return (
               <div
-                className='card align-items-center m-2 pe-0 ps-0'
+                className="card align-items-center m-2 pe-0 ps-0"
                 style={{ width: '18rem' }}
                 key={id}>
                 <Image
                   src={img}
-                  className='card-img-top'
-                  alt='Shirt Machines'
+                  className="card-img-top"
+                  alt="Shirt Machines"
                 />
-                <div className='card-body'>
-                  <h5 className='card-title'>{card_title}</h5>
+                <div className="card-body">
+                  <h5 className="card-title">{card_title}</h5>
                 </div>
-                <ul className='list-group list-group-flush'>
-                  <li className='list-group-item'>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">
                     <strong>Dimensions: </strong>
                     {dimensions}
                   </li>
-                  <li className='list-group-item'>
+                  <li className="list-group-item">
                     <strong>Power: </strong>
                     {power}
                   </li>
-                  <li className='list-group-item'>
+                  <li className="list-group-item">
                     <strong>Plate Size: </strong>
                     {plate_size}
                     <br /> <strong>Customizable as per requirement.</strong>
                   </li>
-                  <li className='list-group-item'>
+                  <li className="list-group-item">
                     <strong>Batch Size: </strong>
                     {batch_time}
                   </li>

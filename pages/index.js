@@ -10,32 +10,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta charSet='utf-8' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta name='robots' content='index, follow' />
-        <meta name='theme-color' content='#000000' />
-        <meta name='description' content='Samtej Insutries LLP' />
-        <meta
-          name='description'
-          content='samtej t-shirt printing machine, heat press sublimation, fusing, lamination, card making, laminator, motorized card cutter, die cutting, id card cutter, pvc card cutter, automatic card cutter'
-        />
-        <meta property='og:title' content='Samtej Industries' />
-        <meta property='og:site_name' content='Samtej Industries' />
-        <meta
-          property='og:description'
-          content='Simplifying Card Manufacturing'
-        />
-        <meta property='og:type' content='page' />
-        <meta
-          property='og:image'
-          content='https://ik.imagekit.io/36athv2v82c8/brand_logo_9GaKgVjDxY.webp?updatedAt=1635853812981'
-        />
-        <meta property='og:url' content='https://samtejllp.com/' />
-        <link
-          rel='shortcut icon'
-          href='https://ik.imagekit.io/36athv2v82c8/logo_67NOY6puGB.webp?updatedAt=1638894652358'
-          type='image/x-icon'
-        />
         <title>Samtej Industries</title>
       </Head>
       <Navbar />
