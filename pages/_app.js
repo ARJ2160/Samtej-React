@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
             content='samtej heat press sublimation, fusing, lamination, card making, laminator, motorized card cutter, die cutting, id card cutter, pvc card cutter, automatic card cutter, T-shirt printing machine, Samtej Industries Llp, Pune'
           />
           <meta
-            itemProp='description'
+            name='description'
             content='Card Fusing Machine, ID Card Printing Machine & Card Making Machine Manufacturer offered by Samtej Industries Llp from Pune, Maharashtra, India'
           />
           <meta
@@ -57,11 +57,11 @@ function MyApp({ Component, pageProps }) {
           <meta property='og:title' content='Samtej Industries' />
           <meta
             property='og:image'
-            content='https://ik.imagekit.io/36athv2v82c8/brand_logo_9GaKgVjDxY.webp?updatedAt=1635853812981'
+            content='https://og-image.xyz/og/Samtej Industries/Simplifying Card Manufacturing/samtejllp.com{{s}}/https/atkinson/unmatchedeclipse/{{h}}ffffff/data.png'
           />
           <meta
             property='og:image:url'
-            content='https://ik.imagekit.io/36athv2v82c8/brand_logo_9GaKgVjDxY.webp?updatedAt=1635853812981'
+            content='https://og-image.xyz/og/Samtej Industries/Simplifying Card Manufacturing/samtejllp.com{{s}}/https/atkinson/unmatchedeclipse/{{h}}ffffff/data.png'
           />
           <meta
             property='og:description'
