@@ -24,7 +24,6 @@ const HeroNavbar = () => {
               <Image
                 className='navbar-logo '
                 src={company_logo}
-                style={{ width: '50px', height: '50px' }}
                 alt='brand-logo'
               />
             </div>

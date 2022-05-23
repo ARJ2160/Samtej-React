@@ -168,8 +168,8 @@ const Contact = () => {
             </div>
           </div>
           {/* <Suspense fallback={<h1 className="text-white">Still Loading…</h1>}>
-                        <Map />
-                    </Suspense> */}
+            <Map />
+          </Suspense> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,3 @@
-import '../index.css';
-
 import BingMapsReact from 'bingmaps-react';
 import React from 'react';
 
