@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Samtej Industries</title>
+        <title>Samtej Industries LLP</title>
       </Head>
       <Hero />
       <Awards />

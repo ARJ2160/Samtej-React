@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
           />
           <meta
             name='keywords'
-            content='samtej, Samtej Industries, heat press sublimation, fusing, lamination, card making, laminator, motorized card cutter, die cutting, id card cutter, pvc card cutter, automatic card cutter, T-shirt printing machine, Samtej Industries Llp, Pune'
+            content='samtej, Samtej Industries, Samtej Industries Llp, Pune, heat press sublimation, fusing, lamination, card making, laminator, motorized card cutter, die cutting, id card cutter, pvc card cutter, automatic card cutter, T-shirt printing machine'
           />
           <meta
             name='description'
