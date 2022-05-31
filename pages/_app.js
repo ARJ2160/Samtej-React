@@ -20,9 +20,9 @@ function MyApp({ Component, pageProps }) {
         <Head>
           <meta charSet='utf-8' />
           <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
-          <meta itemProp='name' content='Samtej Industries' />
-          <meta name='author' content='Samtej Industries' />
-          <meta name='copyright' content='Samtej Industries' />
+          <meta itemProp='name' content='Samtej Industries LLP' />
+          <meta name='author' content='Samtej Industries LLP' />
+          <meta name='copyright' content='Samtej Industries LLP' />
           <meta name='robots' content='index, follow' />
           <meta name='language' content='en-us' />
           <meta
@@ -53,8 +53,8 @@ function MyApp({ Component, pageProps }) {
           />
           <meta property='og:type' content='website' />;
           <meta property='og:url' content='https://samtejllp.com/' />
-          <meta property='og:site_name' content='Samtej Industries' />
-          <meta property='og:title' content='Samtej Industries' />
+          <meta property='og:site_name' content='Samtej Industries LLP' />
+          <meta property='og:title' content='Samtej Industries LLP' />
           <meta
             property='og:image'
             content='https://og-image.xyz/og/Samtej Industries/Simplifying Card Manufacturing/samtejllp.com{{s}}/https/atkinson/unmatchedeclipse/{{h}}ffffff/data.png'
